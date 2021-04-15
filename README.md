@@ -5,7 +5,6 @@
 1. example 1
 2. example 2
 3. example 3
-4. example 4
 
 ## Purpose of Project
 
