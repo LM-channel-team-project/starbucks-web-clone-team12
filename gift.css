@@ -1,0 +1,42 @@
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  font-size: 15px;
+}
+
+h1 {
+  background-color: aqua;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.new_and_limited img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+
+.new_and_limited {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+}
+
