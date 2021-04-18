@@ -1,19 +1,117 @@
+:root {
+  /* color */
+  --green-color: #006633;
+  --beige--color: #F4F4F1;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
 body {
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  margin: auto;
 }
 
 span {
   font-size: 15px;
 }
 
-h1 {
-  background-color: aqua;
+h2 {
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  padding-bottom: 25px;
 }
-section {
+
+.title {
   display: flex;
+  flex-direction:column;
+  align-items: flex-start;
+  width: 1000px;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.search__btn {
+  text-align: center;
+  padding: 25px 0 15px;
+}
+
+.search__btn button {
+  width: 200px;
+  height: 35px;
+  border-radius: 4px;
+  background-color: var(--beige--color);
+  margin-right: 5px;
+}
+
+
+.search__btn .active {
+  background-color: var(--green-color);
+  color: white;
+}
+
+.search__checkbox {
+  font-size: 13px;
+  max-width: 800px;
+  margin: 10px;
+}
+
+.search__moreBtn {
+  position: absolute;
+  top:15px;
+  right: 30px;
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--beige--color);
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.items__title {
+  /* max-width: 1200px; */
+  height: 25px;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: var(--beige--color);
+  z-index: 1;
+}
+
+.item__container {
+  display: flex;
+  justify-content: flex-start;
   flex-wrap: wrap;
   max-width: 1200px;
 }
@@ -24,6 +122,20 @@ section {
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.item span {
+  z-index: 1;
+}
+
+.item .item__img{
+  transition: all 300ms ease-in;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.item .item__img:hover {
+  transform: scale(1.1);
 }
 
 .new_and_limited img {
