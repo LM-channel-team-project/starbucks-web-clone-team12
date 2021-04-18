@@ -1,5 +1,11 @@
 # Starbucks web clone
 
+html은 pages안에 각각의 폴더에 저장하시면 되고 
+
+css도 css안에 각각의 폴더에 저장 하시면 됩니다.
+
+
+
 ## 개요
 
 1. example 1
