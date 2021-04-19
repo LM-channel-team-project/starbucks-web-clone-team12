@@ -28,7 +28,7 @@
   z-index: 12;
 }
 .logo a {
-  background: url(../img/nav/logo.png);
+  background: url(https://www.starbucks.co.kr/common/img/common/logo.png);
   display: block;
   height: 100%;
   width: 100%;
@@ -79,4 +79,36 @@
   color: #222;
 }
 
-/* Container 부분 */
+/* Content 부분 */
+.content {
+  width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+.content .product_kind {
+  padding: 30px 30px 0px;
+  border: 1px solid #ddd;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.product_kind .title {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.product_kind .product_kind_btn {
+  position: absolute;
+  right: 30px;
+  top: 17px;
+}
+.product_kind_btn img {
+  vertical-align: top;
+}
+.product_kind .product_kind_check {
+  border-top: 1px solid #ddd;
+  padding: 30px 0;
+  position: relative;
+}
