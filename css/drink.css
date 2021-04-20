@@ -85,7 +85,7 @@
   margin: 0 auto;
   padding-bottom: 90px;
 }
-.content .product_kind {
+.content .drink_kind {
   padding: 30px 30px 0px;
   border: 1px solid #ddd;
   position: relative;
@@ -93,22 +93,127 @@
   margin-bottom: 40px;
 }
 
-.product_kind .title {
+/* 분류보기 부분*/
+.drink_kind .title {
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 30px;
 }
 
-.product_kind .product_kind_btn {
+.drink_kind .drink_kind_btn {
   position: absolute;
   right: 30px;
   top: 17px;
 }
-.product_kind_btn img {
+.drink_kind_btn img {
   vertical-align: top;
 }
-.product_kind .product_kind_check {
+.drink_kind #drink_kind_check {
   border-top: 1px solid #ddd;
   padding: 30px 0;
   position: relative;
+}
+.drink_kind_tabs dd {
+  padding-top: 55px;
+}
+.drink_kind_tabs .dt1 {
+  left: 0;
+  position: absolute;
+  top: 30px;
+}
+
+.dt1 #drink_kind_tab {
+  display: block;
+  width: 200px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 3px;
+  background: #f4f4f1;
+  color: #222;
+  font-size: 14px;
+  text-align: center;
+}
+.dt1 .selected {
+  background: #006633;
+  color: #fff;
+}
+
+.drink_kind_tabs dd {
+  padding-top: 55px;
+}
+
+.hid {
+  position: absolute;
+  left: -9999px;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.product_select_wrap ul {
+  width: 1040px;
+}
+
+#mCSB_1_container li {
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  float: left;
+  margin-right: 30px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.drink_kind_tabs .dt2 {
+  left: 210px;
+  position: absolute;
+  top: 30px;
+}
+.dt2 #theme_tab {
+  display: block;
+  width: 200px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 3px;
+  background: #f4f4f1;
+  color: #222;
+  font-size: 14px;
+  text-align: center;
+}
+.dt2 .selected {
+  background: #006633;
+  color: #fff;
+}
+.service_bn {
+  width: 1053px;
+  position: relative;
+  left: -8px;
+  top: -5px;
+}
+.service_bn li {
+  float: left;
+  margin: 5px 8px;
+  width: 335px;
+  /* height: 90px; */
+}
+
+.service_bn li a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  text-decoration: none;
+  vertical-align: baseline;
+  color: #666;
+  background: transparent;
+  cursor: pointer;
+}
+.service_bn li a img {
+  width: 335px;
+  height: 90px;
+  border: 2px solid #fff;
+  vertical-align: top;
+  max-width: 100%;
+  border-radius: 7px;
+  border: 2px solid #006633;
 }
