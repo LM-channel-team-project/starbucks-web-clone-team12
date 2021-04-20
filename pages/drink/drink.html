@@ -18,12 +18,12 @@
       <div class="menu">
         <div class="menu-inner">
           <div class="logo">
-            <a href="#"></a>
+            <a href="../../index.html"></a>
           </div>
           <nav class="menu-nav">
             <ul>
               <li class="nav01">
-                <h2><a href="">Drink</a></h2>
+                <h2><a href="../drink/drink.html">Drink</a></h2>
               </li>
               <li class="nav02">
                 <h2><a href="">Food</a></h2>
@@ -47,7 +47,7 @@
           <h2 id="title">Drink</h2>
           <ul class="maps">
             <li>
-              <a href="#"
+              <a href="/index.html"
                 ><img
                   src="https://image.istarbucks.co.kr/common/img/common/icon_home.png"
                   alt="home"
@@ -59,35 +59,144 @@
                 alt="icon_arrow"
               />
             </li>
-            <li><a href="#" class="map-drink">drink</a></li>
+            <li>
+              <a href="/pages/drink/drink.html" class="map-drink">drink</a>
+            </li>
             <li></li>
             <li></li>
           </ul>
         </div>
       </div>
       <div class="content">
-        <div class="product_kind">
+        <div class="drink_kind">
           <p class="title">분류 보기</p>
-          <div class="product_kind_btn">
+          <div class="drink_kind_btn">
             <a href="#" role="button">
               <img
                 src="https://image.istarbucks.co.kr/common/img/menu/list_up_btn.png"
-                alt="분류 더 보기"
                 id="kind_btn"
               />
             </a>
           </div>
-          <div id="product_kind_check">
-            <div class="d">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              commodi, est reprehenderit eum accusantium non perspiciatis aut
-              maiores totam deleniti quis illo explicabo aliquid? Sequi veniam
-              expedita excepturi culpa eaque?
-            </div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-            cupiditate nemo voluptas minus earum necessitatibus suscipit quis
-            libero officiis distinctio voluptates labore vero, eligendi
-            consectetur iure quaerat voluptatibus magnam repellat.
+          <div id="drink_kind_check">
+            <dl class="drink_kind_tabs">
+              <dt class="dt1"><a href="#" id="drink_kind_tab">카테고리</a></dt>
+              <dd>
+                <div class="product_select_wrap">
+                  <form method="post">
+                    <fieldset>
+                      <legend class="hid">음료 카테고리 별 분류 보기</legend>
+                      <ul
+                        class="cate_list mCustomScrollbar _mCS_1 mCS_no_scrollbar"
+                      >
+                        <div id="mCSB_1">
+                          <div id="mCSB_1_container">
+                            <li>
+                              <input
+                                type="checkbox"
+                                name="product_all"
+                                id="product_all"
+                              />
+                              <label for="product_all">전체 상품보기</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                name="product_cold_brew"
+                                id="product_cold_brew"
+                              />
+                              <label for="product_cold_brew"
+                                >콜드 브루 커피</label
+                              >
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                name="product_brood"
+                                id="product_brood"
+                              />
+                              <label for="product_brood">브루드 커피</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                name="product_espresso"
+                                id="product_espresso"
+                              />
+                              <label for="product_espresso">에스프레소</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                name="product_frappuccino"
+                                id="product_frappuccino"
+                              />
+                              <label for="product_frappuccino"
+                                >프라푸치노</label
+                              >
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                name="product_blended"
+                                id="product_blended"
+                              />
+                              <label for="product_blended">블렌디드</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                name="product_fizzo"
+                                id="product_fizzo"
+                              />
+                              <label for="product_fizzo">스타벅스 피지오</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                name="product_tea"
+                                id="product_tea"
+                              />
+                              <label for="product_tea">티 (티바나)</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                name="product_etc"
+                                id="product_etc"
+                              />
+                              <label for="product_etc">기타 제조 음료</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                name="product_juice"
+                                id="product_juice"
+                              />
+                              <label for="product_juice"
+                                >스타벅스 주스(병음료)</label
+                              >
+                            </li>
+                          </div>
+                        </div>
+                      </ul>
+                    </fieldset>
+                  </form>
+                </div>
+              </dd>
+              <dt class="dt2"><a href="#" id="theme_tab">테마</a></dt>
+              <dd>
+                <ul class="service_bn">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="https://image.istarbucks.co.kr/upload/banner/themebnr/82p8KL_20210412162303607.jpg"
+                        alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
           </div>
         </div>
       </div>
