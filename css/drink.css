@@ -122,7 +122,7 @@
   top: 30px;
 }
 
-.dt1 #drink_kind_tab {
+.dt1 a {
   display: block;
   width: 200px;
   height: 35px;
@@ -170,7 +170,7 @@
   position: absolute;
   top: 30px;
 }
-.dt2 #theme_tab {
+.dt2 a {
   display: block;
   width: 200px;
   height: 35px;
@@ -192,10 +192,10 @@
   top: -5px;
 }
 .service_bn li {
-  float: left;
+  /* float: left; */
   margin: 5px 8px;
   width: 335px;
-  /* height: 90px; */
+  height: 90px;
 }
 
 .service_bn li a {
