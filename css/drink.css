@@ -185,6 +185,9 @@
   background: #006633;
   color: #fff;
 }
+.dt2_content {
+  display: none;
+}
 .service_bn {
   width: 1053px;
   position: relative;
