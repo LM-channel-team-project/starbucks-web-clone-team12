@@ -21,3 +21,16 @@ checkboxBtnContainer.addEventListener('click', (e) => {
     }
   });
 });
+
+// toggle searchBtn
+const upBtn = document.querySelector('.search__upBtn');
+const searchContainer = document.querySelector('.search__container');
+
+upBtn.addEventListener('click', () => {
+  searchContainer.classList.toggle('active');
+});
+
+
+
+
+
