@@ -1,46 +1,55 @@
 @import "reset.css";
+@import "footer.css";
 .container {
-    width: 100%;
-  }
+  width: 100%;
+}
 .container .menu {
-    background: #f6f5ef;
-    border-bottom: 1px solid #e5e5e5;
-    border-top: 2px solid #000;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 120px;
-    z-index: 99;
-  }
-  .menu .menu-inner {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 120px;
-    width: 1100px;
-  }
-  .menu-inner .logo {
-    height: 75px;
-    width: 75px;
-    z-index: 12;
-  }
-  .logo a {
-    background: url(https://www.starbucks.co.kr/common/img/common/logo.png);
-    display: block;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-  }
-  .menu-nav {
-    width: 80%;
-  }
-  .menu-nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .menu-nav ul li {
-    font: normal 20px Avenir, Arial, georgia;
-    color: #333;
+  background: #f6f5ef;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 2px solid #000;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  z-index: 99;
+}
+.menu .menu-inner {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  width: 1100px;
+}
+.menu-inner .logo {
+  height: 75px;
+  width: 75px;
+  z-index: 12;
+}
+.logo a {
+  background: url(https://www.starbucks.co.kr/common/img/common/logo.png);
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.menu-nav {
+  width: 80%;
+}
+.menu-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-nav ul li {
+  font: normal 20px Avenir, Arial, georgia;
+  color: #333;
+}
+main {
+  margin-top: 150px;
+  width: 100%;
+  height: 98px;
+  background: #fff;
+  text-align: center;
+}
