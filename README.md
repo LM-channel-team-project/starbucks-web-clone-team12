@@ -4,7 +4,8 @@ html은 pages안에 각각의 폴더에 저장하시면 되고
 
 css도 css안에 각각의 폴더에 저장 하시면 됩니다.
 
-
+### 주소
+https://lm-channel-team-project.github.io/starbucks-web-clone-team12/
 
 ## 개요
 
