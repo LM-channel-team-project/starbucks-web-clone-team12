@@ -40,7 +40,7 @@ body {
 }
 
 .container {
-  margin: 20px;
+  margin: 15px;
 }
 
 span {
@@ -76,7 +76,6 @@ span {
 
 .dropdown {
   width: 100%;
-  /* display: none; */
 }
 
 .dropdown ul {
@@ -116,19 +115,22 @@ span {
 }
 
 .search {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding: 15px 25px;
+  padding: 0px 25px;
+  max-width: 1200px;
+  margin: auto;
+
 }
 
 .search h2 {
   font-size: 18px;
-  width: 100%;
   color: var(--black-color);
+  position: relative;
+  top: 5px;
 }
 
 .search__titleAndMorebtn {
@@ -140,13 +142,15 @@ span {
 }
 
 .search__upBtn {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 40px;
   color: var(--black-color);
   background-color: var(--beige--color);
-  margin-bottom: 10px;
+  position: relative;
+  top: 5px;
 }
 
 .search__container {
@@ -160,7 +164,6 @@ span {
 
 .search__btn {
   display: flex;
-  justify-content: flex-start;
   text-align: center;
   padding: 25px 0 15px;
 }
@@ -186,8 +189,9 @@ span {
 .search__checkbox {
   font-size: 13px;
   max-width: 800px;
-  margin: 10px;
+  margin-bottom: 20px;
   color: var(--black-color);
+  /* display: none; */
 }
 
 .search__checkbox button::before {
@@ -208,6 +212,21 @@ span {
   border: 1px solid #ccc;
 }
 
+.search__theme {
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.search__theme img {
+  width: 335px;
+  height: 90px;
+  margin: 8px;
+}
+
+
+/* Content */
 .items.invisible {
   display: none;
 }
