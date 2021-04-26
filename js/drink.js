@@ -48,9 +48,24 @@ drinkThemeTab.addEventListener("click", () => {
   themeList.style.display = "block";
 }); //테마 버튼 클릭시
 
-const loadItem = async () =>
+const loadItems = async () =>
   await fetch("../../data/drink.json")
     .then((response) => response.json())
     .then((json) => json);
 
-loadItem().then((items) => console.log(items));
+const createHTMLString = (item) => {
+  return `
+        <li class="item">
+        <img src="${item.img}" alt="${item.category}" class="item_thumbnail" />
+        <span class="item_description">${item.title}</span>
+        </li>
+        `;
+};
+const displayItems = (items) => {
+  const container = document.querySelector(".list");
+  container.innerHTML = items.map((item) => createHTMLString(item)).join("");
+};
+
+loadItems().then((items) => {
+  displayItems(items);
+});
