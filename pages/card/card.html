@@ -29,20 +29,40 @@
     </header>
     <!-- container -->
     <div class="contents-layout">
-        <div class="title">
-            <img src="../../images/card/title_card.jpg">
+        <!-- title -->
+        <h1 class="title">Card</h1>
+        <div class="map">
+            <a href="../../index.html"><img src="../../images/card/icon_home.png"></a>
+            <img src="../../images/card/icon_arrow.png">
+            <a href="./card.html">Card</a>
         </div>
-        <div class="prd-list">
+        <!-- nav -->
+        <nav class="prd-list">
             <h3>분류 보기</h3>
-        </div>
-        <div class="contents">
-
+            <img src="../../images/card/list_up_btn.png">
+            <div id="prd-list-innerline"></div>
+            <a href="#" class="selected11"><div class="prd-list-lnb" id="test1" onclick="test1Click();">테스트1</div></a>
+            <a href="#" class="selected22"><div class="prd-list-lnb" id="test2" onclick="test2Click();">테스트2</div></a>
+            <a href="#" class="selected1"><div class="prd-list-lnb">카테고리</div></a>
+            <a href="#" class="selected2"><div class="prd-list-lnb">테마</div></a>
+            <ul>
+                <li><input type="checkbox" id="all">
+                <label for="all">전체 상품보기</label></li>
+                <li><input type="checkbox" id="physical-card">
+                <label for="physical-card">실물카드</label></li>
+                <li><input type="checkbox" id="e-gift-card">
+                <label for="e-gift-card">e-Gift 카드</label></li>
+            </ul>
+            </nav>
+        <div class="content">
+            content
         </div>
     </div>
     <!-- footer -->
     <footer class="footer">
-
+        footer
     </footer>
     </div>
+    <script src="../../js/card.js"></script>
 </body>
 </html>
