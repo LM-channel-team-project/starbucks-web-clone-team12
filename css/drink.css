@@ -138,12 +138,19 @@
   border-radius: 3px;
   background: #f4f4f1;
   color: #222;
+  font-weight: 600;
   font-size: 14px;
   text-align: center;
+}
+.dt1 a:hover {
+  text-decoration: underline;
 }
 .dt1 .selected {
   background: #006633;
   color: #fff;
+}
+.dt1 .selected:hover {
+  text-decoration: underline;
 }
 
 .drink_kind_tabs dd {
@@ -188,10 +195,17 @@
   color: #222;
   font-size: 14px;
   text-align: center;
+  font-weight: 600;
+}
+.dt2 a:hover {
+  text-decoration: underline;
 }
 .dt2 .selected {
   background: #006633;
   color: #fff;
+}
+.dt2 .selected:hover {
+  text-decoration: underline;
 }
 .dt2_content {
   display: none;
