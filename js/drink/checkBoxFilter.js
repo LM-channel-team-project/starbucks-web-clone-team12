@@ -3,45 +3,69 @@ const loadItems = async () =>
     .then((response) => response.json())
     .then((json) => json);
 
-const createHTMLString = (item) => {
-  return `
-        
-        <li class="item">
-        <img src="${item.img}" alt="${item.category}" class="item_thumbnail" />
-        <span class="item_description">${item.title}</span>
-        </li>
-        `;
+loadItems().then((items) => {
+  setEventListeners(items);
+});
+
+const setEventListeners = (items) => {
+  document
+    .getElementById("coldBrew")
+    .addEventListener("click", (event) => filter(event, items));
+  document
+    .getElementById("brood")
+    .addEventListener("click", (event) => filter(event, items));
+  document
+    .getElementById("espresso")
+    .addEventListener("click", (event) => filter(event, items));
+  document
+    .getElementById("frappuccino")
+    .addEventListener("click", (event) => filter(event, items));
+  document
+    .getElementById("blended")
+    .addEventListener("click", (event) => filter(event, items));
+  document
+    .getElementById("fizzo")
+    .addEventListener("click", (event) => filter(event, items));
+  document
+    .getElementById("tea")
+    .addEventListener("click", (event) => filter(event, items));
+  document
+    .getElementById("etc")
+    .addEventListener("click", (event) => filter(event, items));
+  document
+    .getElementById("juice")
+    .addEventListener("click", (event) => filter(event, items));
 };
 
-const allCheckDisplayItems = (event, items) => {
-  //json 데이터 화면에 표시
+const filter = (event, items) => {
+  const { value } = event.target.dataset;
+  const allowed = [`${value}`];
+  const filtered = Object.keys(items)
+    .filter((key) => allowed.includes(key))
+    .reduce((obj, key) => {
+      return { ...obj, [key]: items[key] };
+    }, {});
+  result = Object.values(filtered);
+  DisplayItems(event, result);
+};
+
+const DisplayItems = (event, items) => {
   const container = document.querySelector(".list");
   if (event.target.checked) {
-    container.innerHTML = items.map((item) => createHTMLString(item)).join("");
+    container.innerHTML = items.map((item) =>
+      item.map((sub) => createHTMLString(sub)).join("")
+    );
   } else {
     container.innerHTML = "";
   }
 };
 
-const setEventListeners = (items) => {
-  const alls = document.querySelector("#product_all");
-  alls.addEventListener("click", (event) => allCheckDisplayItems(event, items));
+const createHTMLString = (items) => {
+  return `
+    <div>${items.category}</div>
+    <li class="item">
+    <img src="${items.img}" alt="${items.title}" class="item_thumbnail" />
+    <span class="item_description">${items.title}</span>
+    </li>
+    `;
 };
-
-const getCheckboxValue = (event, items) => {
-  const { key, value } = event.target.dataset;
-  let result = "";
-  if (event.target.checked) {
-    if (key == null || value == null) return;
-    result = items
-      .filter((item) => item[key] === value)
-      .map((item) => item.title);
-  } else {
-    result = "";
-  }
-  document.getElementById("result").innerText = result;
-};
-
-loadItems().then((items) => {
-  setEventListeners(items);
-});
