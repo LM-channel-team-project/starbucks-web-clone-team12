@@ -62,10 +62,13 @@ const DisplayItems = (event, items) => {
 
 const createHTMLString = (items) => {
   return `
-    <div>${items.category}</div>
     <li class="item">
-    <img src="${items.img}" alt="${items.title}" class="item_thumbnail" />
-    <span class="item_description">${items.title}</span>
+      <div class="item_container">
+        <div class="item_content">
+          <img src="${items.img}" alt="${items.title}" class="item_thumbnail" />
+        </div>
+        <span class="item_description">${items.title}</span>
+      </div>
     </li>
     `;
 };
