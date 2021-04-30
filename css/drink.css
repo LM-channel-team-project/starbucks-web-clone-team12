@@ -254,6 +254,17 @@
   width: 1100px;
 }
 
+.categoryList .category_title {
+  display: none;
+  padding: 20px;
+  background: #f4f4f2;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+}
 .list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
