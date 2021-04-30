@@ -39,12 +39,11 @@
         <!-- nav -->
         <nav class="prd-list">
             <h3>분류 보기</h3>
-            <img src="../../images/card/list_up_btn.png">
+            <a class="list_updown"><img src="../../images/card/list_up_btn.png" id="updownbtn" onclick="updown()"></a>
             <div id="prd-list-innerline"></div>
-            <a href="#" class="selected11"><div class="prd-list-lnb" id="test1" onclick="test1Click();">테스트1</div></a>
-            <a href="#" class="selected22"><div class="prd-list-lnb" id="test2" onclick="test2Click();">테스트2</div></a>
-            <a href="#" class="selected1"><div class="prd-list-lnb">카테고리</div></a>
-            <a href="#" class="selected2"><div class="prd-list-lnb">테마</div></a>
+            <!-- addEventListener 변경 필요 -->
+            <a href="#" class="list1"><div class="prd-list-lnb" id="category" onclick="listClick1()">카테고리</div></a>
+            <a href="#" class="list2"><div class="prd-list-lnb" id="theme" onclick="listClick2()">테마</div></a>
             <ul>
                 <li><input type="checkbox" id="all">
                 <label for="all">전체 상품보기</label></li>
@@ -53,12 +52,454 @@
                 <li><input type="checkbox" id="e-gift-card">
                 <label for="e-gift-card">e-Gift 카드</label></li>
             </ul>
-            </nav>
+        </nav>
+        <!-- content -->
         <div class="content">
-            content
+            <select>
+                <option selected>상세분류</option>
+                <option><!-- checkbox + img -->신규 출시된 메뉴</option>
+                <option><!-- checkbox + img -->한정기간 출시되는 시즌성 메뉴</option>
+            </select>
+            <h3>실물카드</h3>
+                <div class="imgwrap">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007987_WEB.png" alt="고맙습니다 카드"></a></dt>
+                                <dd>고맙습니다 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007965_WEB.png" alt="2021 서머 시트러스 카드"></a></dt>
+                                <dd>2021 서머 시트러스 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007885_WEB.png" alt="스타벅스 50주년 카드"></a></dt>
+                                <dd>스타벅스 50주년 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007884_WEB.png" alt="2021 체리블라썸 카드"></a></dt>
+                                <dd>2021 체리블라썸 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007873_WEB.png" alt="2021 화이트데이 하트 카드"></a></dt>
+                                <dd>2021 화이트데이 하트 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007785_WEB.jfif" alt="2021 무궁화 카드"></a></dt>
+                                <dd>2021 무궁화 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007784_WEB.png" alt="2021 복 카드"></a></dt>
+                                <dd>2021 복 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007771_WEB.png" alt="스타벅스 그린 워드마크 카드"></a></dt>
+                                <dd>스타벅스 그린 워드마크 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007758_WEB.png" alt="2021 스타벅스 LucKey 카드"></a></dt>
+                                <dd>2021 스타벅스 LucKey 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007757_WEB.png" alt="스타벅스 Bee Mine 카드"></a></dt>
+                                <dd>스타벅스 Bee Mine 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007756_WEB.png" alt="2021 밸런타인 데이 카드"></a></dt>
+                                <dd>2021 밸런타인 데이 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007755_WEB.png" alt="스타벅스 2021 카드"></a></dt>
+                                <dd>스타벅스 2021 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007754_WEB.png" alt="더양평DTR 스타벅스 카드"></a></dt>
+                                <dd>더양평DTR 스타벅스 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007753_WEB.png" alt="2021 뉴이어 카드 블루"></a></dt>
+                                <dd>2021 뉴이어 카드 블루</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007752_WEB.png" alt="2021 뉴이어 카드 레드"></a></dt>
+                                <dd>2021 뉴이어 카드 레드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007706_WEB.png" alt="2021 스페셜 카드"></a></dt>
+                                <dd>2021 스페셜 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007705_WEB.png" alt="2020 산타 빌리지 카드"></a></dt>
+                                <dd>2020 산타 빌리지 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007704_WEB.png" alt="2020 홀리데이 티켓 카드"></a></dt>
+                                <dd>2020 홀리데이 티켓 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007703_WEB.png" alt="2020 크리스마스 레드컵 카드"></a></dt>
+                                <dd>2020 크리스마스 레드컵 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007702_WEB.png" alt="2020 진저브래드 쿠키 카드"></a></dt>
+                                <dd>2020 진저브래드 쿠키 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007701_WEB.png" alt="2020 크리스마스 애니멀 카드"></a></dt>
+                                <dd>2020 크리스마스 애니멀 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007700_WEB.png" alt="2020 스노우맨 카드"></a></dt>
+                                <dd>2020 스노우맨 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007699_WEB.png" alt="2020 크리스마스 트리 카드"></a></dt>
+                                <dd>2020 크리스마스 트리 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007698_WEB.png" alt="2020 홀리데이 사이렌 카드"></a></dt>
+                                <dd>2020 홀리데이 사이렌 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007679_WEB.png" alt="2020 오텀 시즈널 카드"></a></dt>
+                                <dd>2020 오터 시즈널 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007678_WEB.png" alt="2020 해피 할로윈 카드"></a></dt>
+                                <dd>2020 해피 할로윈 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007633_WEB.png" alt="스타벅스 그린 사이렌 카드"></a></dt>
+                                <dd>스타벅스 그린 사이렌 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007632_WEB.png" alt="플레이모빌 피규어 골드카드"></a></dt>
+                                <dd>플레이모빌 피규어 골드카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007631_WEB.png" alt="2020 애니버서리 사이렌 카드"></a></dt>
+                                <dd>2020 애니버서리 사이렌 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007630_WEB.png" alt="2020 오텀 머그 카드"></a></dt>
+                                <dd>2020 오텀 머그 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007629_WEB.png" alt="스타벅스 플레이모빌 카드"></a></dt>
+                                <dd>스타벅스 플레이모빌 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007609_WEB.png" alt="2020 코리아 카드"></a></dt>
+                                <dd>2020 코리아 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007589_WEB.png" alt="스타벅스 21주년 카드"></a></dt>
+                                <dd>스타벅스 21주년 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007550_WEB.png" alt="2020 서머 피크닉 카드"></a></dt>
+                                <dd>2020 서머 피크닉 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007549_WEB.png" alt="You're My Sunshine 카드"></a></dt>
+                                <dd>You're My Sunshine 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007529_WEB.png" alt="제주 시티 카드"></a></dt>
+                                <dd>제주 시티 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007509_WEB.png" alt="2020 워터멜론 카드"></a></dt>
+                                <dd>2020 워터멜론 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007450_WEB.png" alt="2020 고맙습니다 카드"></a></dt>
+                                <dd>2020 고맙습니다 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007449_WEB.png" alt="스타벅스 Thank You 카드"></a></dt>
+                                <dd>스타벅스 Thank You 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007389_WEB.png" alt="2020 서머 프루츠 카드"></a></dt>
+                                <dd>2020 서머 프루츠 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007369_WEB.png" alt="2020 서머 플라워 카드"></a></dt>
+                                <dd>2020 서머 플라워 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007349_WEB.png" alt="스타벅스 베라왕 카드"></a></dt>
+                                <dd>스타벅스 베라왕 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007329_WEB.png" alt="서울 시티 카드"></a></dt>
+                                <dd>서울 시티 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007309_WEB.png" alt="2020 체리블라썸 카드"></a></dt>
+                                <dd>2020 체리블라썸 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007289_WEB.png" alt="2020 화이트 데이 하트 카드"></a></dt>
+                                <dd>2020 화이트 데이 하트 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007190_WEB.png" alt="2020 무궁화 카드"></a></dt>
+                                <dd>2020 무궁화 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007189_WEB.png" alt="2020 스프링 카드"></a></dt>
+                                <dd>2020 스프링 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007129_WEB.png" alt="스타벅스 축하합니다 카드"></a></dt>
+                                <dd>스타벅스 축하합니다 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007030_WEB.png" alt="2020 밸런타인 데이 카드"></a></dt>
+                                <dd>2020 밸런타인 데이 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/007029_WEB.png" alt="퍼플 베어리스타 카드 Cup"></a></dt>
+                                <dd>퍼플 베어리스타 카드 Cup</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/006989_WEB.png" alt="퍼플 베어리스타 카드 Bomb"></a></dt>
+                                <dd>퍼플 베어리스타 카드 Bomb</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/006909_WEB.png" alt="2020 복주머니 카드"></a></dt>
+                                <dd>2020 복주머니 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/006850_WEB.png" alt="스타벅스 2020카드"></a></dt>
+                                <dd>스타벅스 2020카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/006849_WEB.png" alt="2020 뉴이어 카드"></a></dt>
+                                <dd>2020 뉴이어 카드</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/physical-card/006592_WEB.png" alt="2020 헤리티지 카드"></a></dt>
+                                <dd>2020 헤리티지 카드</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            <h3>e-Gift 카드</h3>
+                <div class="imgwrap">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/e-card/007944_WEB.png" alt="50th Anniversary"></a></dt>
+                                <dd>50th Anniversary</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/e-card/007904_WEB.png" alt="2021 Cherry Blossom"></a></dt>
+                                <dd>2021 Cherry Blossom</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/e-card/007864_WEB.png" alt="White Siren e-Gift"></a></dt>
+                                <dd>White Siren e-Gift</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/e-card/007844_WEB.png" alt="설날 e-Gift Card"></a></dt>
+                                <dd>설날 e-Gift Card</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/e-card/007804_WEB.png" alt="Sweet Valentine"></a></dt>
+                                <dd>Sweet Valentine</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/e-card/007769_WEB.png" alt="스타벅스 플레이모빌 e-Gift"></a></dt>
+                                <dd>스타벅스 플레이모빌 e-Gift</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/e-card/007764_WEB.png" alt="2021 Happy New Year"></a></dt>
+                                <dd>2021 Happy New Year</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/e-card/007746_WEB.png" alt="You're the Best!"></a></dt>
+                                <dd>You're the Best!</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/e-card/007732_WEB.png" alt="능력을 보여주세요!"></a></dt>
+                                <dd>능력을 보여주세요!</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/e-card/007731_WEB.png" alt="Thank You!"></a></dt>
+                                <dd>Thank You!</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/e-card/007723_WEB.png" alt="Heart You"></a></dt>
+                                <dd>Heart You</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/e-card/007713_WEB.png" alt="You're Amazing"></a></dt>
+                                <dd>You're Amazing</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/e-card/007712_WEB.png" alt="Coffee On Me"></a></dt>
+                                <dd>Coffee On Me</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/e-card/007711_WEB.png" alt="Thanks So Much!"></a></dt>
+                                <dd>Thanks So Much!</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/e-card/007710_WEB.png" alt="My Hero"></a></dt>
+                                <dd>My Hero</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="#"><img src="../../images/card/e-card/007709_WEB.png" alt="Birthday Balloons"></a></dt>
+                                <dd>Birthday Balloons</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
         </div>
     </div>
     <!-- footer -->
+    
     <footer class="footer">
         footer
     </footer>
