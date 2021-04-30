@@ -20,25 +20,27 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar">
-      <div class="navbar__logo">
-        <a href="../../index.html">
-          <img
-            src="https://www.starbucks.co.kr/common/img/common/logo.png"
-            alt="logo image"
-          />
-        </a>
+      <div class="navbar__container">
+        <div class="navbar__logo">
+          <a href="../../index.html">
+            <img
+              src="https://www.starbucks.co.kr/common/img/common/logo.png"
+              alt="logo image"
+            />
+          </a>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item">
+            <a href="../drink/drink.html">Drink</a>
+          </li>
+          <li class="navbar__menu__item"><a href="＃">Food</a></li>
+          <li class="navbar__menu__item"><a href="../gift/gift.html">Gift</a></li>
+          <li class="navbar__menu__item"><a href="../card/card.html">Card</a></li>
+          <li class="navbar__menu__item"><a href="#">Menu Story</a></li>
+        </ul>
       </div>
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item">
-          <a href="/../drink/drink.html">Drink</a>
-        </li>
-        <li class="navbar__menu__item"><a href="#">Food</a></li>
-        <li class="navbar__menu__item"><a href="#">Gift</a></li>
-        <li class="navbar__menu__item"><a href="#">Card</a></li>
-        <li class="navbar__menu__item"><a href="#">Menu Story</a></li>
-      </ul>
     </nav>
-    <div class="dropdown">
+    <!-- <div class="dropdown">
       <ul>
         <li class="dropdown__item">골드 브루 커피</li>
         <li class="dropdown__item">브루드 커피</li>
@@ -50,42 +52,76 @@
         <li class="dropdown__item">기타 제조 음료</li>
         <li class="dropdown__item">스타벅스 주스(병음료)</li>
       </ul>
-    </div>
+    </div> -->
 
-      <!-- Header -->
-    <div class="container">
-      <div class="title">
-        <h1>Gift</h1>
-        <span>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__title">
+          Gift
+        </div>
+        <span class="header__nav">
           <a href="#"><i class="fas fa-home"></i></a> > <a href="#">Gift</a>
         </span>
       </div>
+    </header>
 
-      <!-- Search -->
-      <section class="search">
+    <!-- Search -->
+    <section class="search">
+      <div class="search__container">
         <div class="search__titleAndMorebtn">
           <h2>분류 보기</h2>
           <button class="search__upBtn">
             <i class="fas fa-chevron-up"></i>
           </button>
         </div>
-        <div class="search__container">
-          <div class="search__btn">
+        <div class="searchBtn">
+          <div class="searchBtn__container">
             <button class="active category">카테고리</button>
             <button class="theme">테마</button>
           </div>
-          <div class="search__checkbox">
-            <button class="checked" data-filter="*">전체 상품보기</button>
-            <button data-filter="mug">머그</button>
-            <button data-filter="glass">글라스</button>
-            <button data-filter="plastic">플라스틱텀블러</button>
-            <button data-filter="stainless">스테인리스 텀블러</button>
-            <button data-filter="thermos">보온병</button>
-            <button data-filter="accessories">엑세서리</button>
-            <button data-filter="coffee_items">커피 용품</button>
-            <button data-filter="tea">패키지 티(티바나)</button>
-            <button data-filter="planner">스타벅스 플래너</button>
-          </div>
+          <ul class="search__checkbox checkbox">
+            <li class="checked" data-filter="*">
+              <input type="checkbox" id="all">
+              <label for="all">전체 상품보기</label>
+            </li>
+            <li data-filter="mug">
+              <input type="checkbox" id="mug">
+              <label for="mug">머그</label>
+            </li>
+            <li data-filter="glass">
+              <input type="checkbox" id="glass">
+              <label for="glass">글라스</label>
+            </li>
+            <li data-filter="plastic">
+              <input type="checkbox" id="plastic">
+              <label for="plastic">플라스틱 텀블러</label>
+            </li>
+            <li data-filter="stainless">
+              <input type="checkbox" id="stainless">
+              <label for="stainless">스테인리스 텀블러</label>
+            </li>
+            <li data-filter="thermos">
+              <input type="checkbox" id="thermos">
+              <label for="thermos">보온병</label>
+            </li>
+            <li data-filter="accessories">
+              <input type="checkbox" id="accessories">
+              <label for="accessories">엑세서리</label>
+            </li>
+            <li data-filter="coffee_items">
+              <input type="checkbox" id="coffee_items">
+              <label for="coffee_items">커피 용품</label>
+            </li>
+            <li data-filter="tea">
+              <input type="checkbox" id="tea">
+              <label for="tea">패키지 티(티바나)</label>
+            </li>
+            <li data-filter="planner">
+              <input type="checkbox" id="planner">
+              <label for="planner">스타벅스 플래너</label>
+            </li>
+          </ul>
           <div class="search__theme">
             <img src="../../images/gift/theme.img/theme1.jpg" alt="">
             <img src="../../images/gift/theme.img/theme2.jpg" alt="">
@@ -93,1356 +129,1472 @@
             <img src="../../images/gift/theme.img/theme4.jpg" alt="">
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Content -->
-      <ul class="items_container">
-        <li class="items" data-type="mug">
-          <h2 class="items__title">머그</h2>
-          <div class="item__container">
-            <div class="item">
-              <img src="../../images/gift/mug_img/1.jpg" alt="" class="item__img" />
-              <div class="new_and_limited"></div>
-              <span>21 서머 마레 머그 355ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
+    <!-- Items -->
+    <section id="items">
+      <ul class="items__container">
+          <li class="items" data-type="mug">
+            <h2 class="items__title">머그</h2>
+            <div class="item__container">
+              <div class="item">
+                <img src="../../images/gift/mug_img/1.jpg" alt="" class="item__img" />
+                <div class="new_and_limited"></div>
+                <span>21 서머 마레 머그 355ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/2.jpg" alt="" class="item__img" />
+                <span>21 서머 테일 머그 355ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/3.jpg" alt="" class="item__img" />
+                <span>3.1 필립림 레인포레스트 머그 355ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/4.jpg" alt="" class="item__img" />
+                <span>3.1 필립림 코랄 머그 355ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/5.jpg" alt="" class="item__img" />
+                <span>SS 마레 스탠리 듀 컵 세트 355ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/6.jpg" alt="" class="item__img" />
+                <span>고슴도치 스푼 머그 296ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/7.jpg" alt="" class="item__img" />
+                <span>SS 리저브 커피 블랙 더블월 머그 355ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/8.jpg" alt="" class="item__img" />
+                <span>경주 투어 머그 355ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/9.jpg" alt="" class="item__img" />
+                <span>그린 사이렌 클래식 머그 237ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/10.jpg" alt="" class="item__img" />
+                <span>그린 사이렌 클래식 머그 355ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/11.jpg" alt="" class="item__img" />
+                <span>그린 사이렌 클래식 머그 473ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/12.jpg" alt="" class="item__img" />
+                <span>리얼 광주 데미머그 89ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/13.jpg" alt="" class="item__img" />
+                <span>리얼 대구 데미머그 89ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/14.jpg" alt="" class="item__img" />
+                <span>리얼 대전 데미머그 89ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/15.jpg" alt="" class="item__img" />
+                <span>리얼 대전 머그 414ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/16.jpg" alt="" class="item__img" />
+                <span>리저브 뉴블랙 머그 355ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/17.jpg" alt="" class="item__img" />
+                <span>리저브 블랙 DW 머그 296ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/18.jpg" alt="" class="item__img" />
+                <span>리저브 화이트 DW 머그 296ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/19.jpg" alt="" class="item__img" />
+                <span>부산 투어 머그 355ml</span>
+              </div>
+              <div class="item" class="item__img">
+                <img src="../../images/gift/mug_img/20.jpg" alt="" />
+                <span>북청사자놀음 데미머그 89ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/21.jpg" alt="" class="item__img" />
+                <span>북청사자놀음 머그 355ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/22.jpg" alt="" class="item__img" />
+                <span>블랙 링 머그 355ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/23.jpg" alt="" class="item__img" />
+                <span>블랙 앤 골드 머그 473ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/24.jpg" alt="" class="item__img" />
+                <span>빈 데어 코리아 데미머그 59ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/25.jpg" alt="" class="item__img" />
+                <span>빈 데어 코리아 머그 414ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/26.jpg" alt="" class="item__img" />
+                <span>서울 제주 데미머그 세트</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/27.jpg" alt="" class="item__img" />
+                <span>서울 투어 머그 355ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/28.jpg" alt="" class="item__img" />
+                <span>스타벅스 1호점 뱃지 머그 414ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/29.jpg" alt="" class="item__img" />
+                <span>스타벅스 1호점 스퀘어 머그 355ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/30.jpg" alt="" class="item__img" />
+                <span>스타벅스 현대카드 슬리브 머그 340ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/31.jpg" alt="" class="item__img" />
+                <span>어뮤즈먼트 파크 좌표 머그 355ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/32.jpg" alt="" class="item__img" />
+                <span>어뮤즈먼트 파크 컬러 머그 355ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/33.jpg" alt="" class="item__img" />
+                <span>우리 한글 블랙 머그 473ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/34.jpg" alt="" class="item__img" />
+                <span>우리 한글 화이트 머그 473ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/35.jpg" alt="" class="item__img" />
+                <span>우리나라 도자 머그 355ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/36.jpg" alt="" class="item__img" />
+                <span>인천 투어 머그 355ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/37.jpg" alt="" class="item__img" />
+                <span>제주 에코컵 세트</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/38.jpg" alt="" class="item__img" />
+                <span>제주 투어 머그 355ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/39.jpg" alt="" class="item__img" />
+                <span>코리아 데미머그 세트(4개입)</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/40.jpg" alt="" class="item__img" />
+                <span>티바나 그린 리드 머그 355ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/41.jpg" alt="" class="item__img" />
+                <span>티바나 포터 머그 355ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/42.jpg" alt="" class="item__img" />
+                <span>티바나 핑크 리드 머그 355ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/43.jpg" alt="" class="item__img" />
+                <span>해운대 엑스더스카이 머그 340ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/44.jpg" alt="" class="item__img" />
+                <span>환구단 스퀘어 머그 355ml</span>
+              </div>
+              <div class="item">
+                <img src="../../images/gift/mug_img/45jpg" alt="" class="item__img" />
+                <span>어뮤즈먼트 파크 시온 글라스 머그 470ml</span>
               </div>
             </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/2.jpg" alt="" class="item__img" />
-              <span>21 서머 테일 머그 355ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
+          </li>
+          <li class="items" data-type="glass">
+            <h2 class="items__title">글라스</h2>
+            <div class="item__container">
+              <div class="item">
+                <img
+                  src="../../images/gift/glass_img/2_1.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>21 서머 고블렛 글라스 355ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/glass_img/2_2.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <div class="new_and_limited"></div>
+                <span>21 서머 글리터 핸들 글라스 355ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/glass_img/2_3.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <div class="new_and_limited"></div>
+                <span>21 서머 해마 글라스 473ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/glass_img/2_4.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <div class="new_and_limited"></div>
+                <span>고슴도치 머들러 글라스 355ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/glass_img/2_5.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>스타벅스 현대카드 오로라 글라스 410ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/glass_img/2_6.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>오로라 글라스 콜드컵 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/glass_img/2_7.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>제주 바다 글라스 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/glass_img/2_8.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>티바나 더블월 글라스 355ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/glass_img/2_9.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>티바나 블루 글라스 콜드컵 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/glass_img/2_10.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>티바나 핑크 글라스 콜드컵 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/glass_img/2_11.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>제주 한라산 핸들 글라스 355ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/glass_img/2_12.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>리저브 골드 핸들 글라스 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/glass_img/2_13.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>리저브 콜드브루 글라스 355ml</span>
               </div>
             </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/3.jpg" alt="" class="item__img" />
-              <span>3.1 필립림 레인포레스트 머그 355ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
+          </li>
+          <li class="items" data-type="plastic">
+            <h2 class="items__title">플라스틱 텀블러</h2>
+            <div class="item__container">
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_1.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>레드 리유저블 컵 세트</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_2.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>언더더씨 워터볼 텀블러 355ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_3.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>마레 DW 컬러체인징 텀블러 473ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_4.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>마레 콜드컵 710ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_5.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>서머 민트 스터드 텀블러 710ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_6.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>고슴도치 스퀘어 워터보틀 414ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_7.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>고슴도치 스퀘어 워터보틀 414ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_8.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>마레 지아 워터보틀 473mll</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_9.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>언더더씨 슬림라인 워터보틀 532ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_10.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>리얼 광주 텀블러 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_11.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>리얼 대구 텀블러 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_12.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>리얼 대전 텀블러 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_13.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>마블 화이트 아이코닉 텀블러 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_14.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>빈 데어 코리아 텀블러 355ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_15.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>코리아 훈민정음 텀블러 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_16.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>그린 그러데이션 사이렌 콜드컵 591ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_17.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>그린 팝햅들 콜드컵 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_18.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>블랙 사이렌 콜드컵 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_19.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>블랙 사이렌 콜드컵 591ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_20.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>블랙 사이렌 콜드컵 710ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_21.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>제주 수국 에코컵 세트</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/plastic_tumbler_img/3_22.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>21 제주 동백 레나 워터보틀 473ml</span>
               </div>
             </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/4.jpg" alt="" class="item__img" />
-              <span>3.1 필립림 코랄 머그 355ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
+          </li>
+          <li class="items" data-type="stainless">
+            <h2 class="items__title">스테인리스 텀블러</h2>
+            <div class="item__container">
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_1.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 마레 힐사이드 텀블러 355ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_2.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 미르 고슴도치 텀블러 473ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_3.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 미르 핸들 고슴도치 텀블러 591ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_4.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 언더더씨 DW 투고 텀블러 473ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_5.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 언더더씨 야빈 텀블러 473ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_6.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 3.1 필립림 레인포레스트 콜드컵 473ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_7.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 3.1 필립림 코랄 콜드컵 473ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_8.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 마레 스탠리 플라스크 237ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_9.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 고슴도치 데일리 워터보틀 473ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_10.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS DW 그린 워드마크 투고 텀블러 591ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_11.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 경주 투어 텀블러 355ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_12.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 루시 레터 슬리브 텀블러 355ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_13.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 마블 화이트 오페라 텀블러 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_14.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 부산 투어 텀블러 355m</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_15.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 북청사자놀음 텀블러 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_16.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 블랙 헤리티지 오드리 텀블러 355ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_17.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 서울 투어 텀블러 355ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_18.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 엘마 블랙 텀블러 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_19.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 우리나라 도자 텀블러 355ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_20.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 인천 투어 텀블러 355ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_21.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 제주 수국 트로이 텀블러 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_22.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 제주 투어 텀블러 355ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_23.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 처비 사이렌 텀블러 355ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_24.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 컨투어 워드마크 텀블러 355ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_25.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 콩코드 사이렌 화이트 텀블러 591ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_26.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 트로이 스타벅스 1호점 텀블러 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_27.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 티바나 다니엘 텀블러 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_28.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 티바나 햄튼 텀블러 355ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_29.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 환구단 트로이 텀블러 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_30.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 그린 처비 핸들 텀블러 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_31.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 리저브 블랙 콜드컵 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_32.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 블랙 앤 골드 콜드컵 591ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_33.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 블랙 헤리티지 터커 콜드컵 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/stainless_tumbler_img/4_34.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 리저브 화이트 워터보틀 591ml</span>
               </div>
             </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/5.jpg" alt="" class="item__img" />
-              <span>SS 마레 스탠리 듀 컵 세트 355ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
+          </li>
+          <li class="items" data-type="thermos">
+            <h2 class="items__title">보온병</h2>
+            <div class="item__container">
+              <div class="item">
+                <img
+                  src="../../images/gift/thermos_img/5_1.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 마레 스탠리 베이츠 보온병 473ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/thermos_img/5_2.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 마레 스탠리 통가 보온병 710ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/thermos_img/5_3.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 마레 스탠리 푸드 자 414ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/thermos_img/5_4.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>JMZ 그린 사이렌 보온병 350ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/thermos_img/5_5.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>JNL 어뮤즈먼트 파크 보온병 500ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/thermos_img/5_6.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>JNO 마블 화이트 보온병 500ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/thermos_img/5_7.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 블랙 앤 골드 스탠리 보온병 500ml</span>
               </div>
             </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/6.jpg" alt="" class="item__img" />
-              <span>고슴도치 스푼 머그 296ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
+          </li>
+          <li class="items" data-type="accessories">
+            <h2 class="items__title">액세서리</h2>
+            <div class="item__container">
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_1.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>21 서머1 마레 보틀 파우치</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_2.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>21 서머1 마레 폴더블 백팩</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_3.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>21 서머 1 스탠리 런치 박스</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_4.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>해운대 엑스더스카이 머들러</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_5.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>21 제주 동백 트래블 파우치</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_6.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>경주 투어 미니백</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_7.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>리저브 블루 카드 홀더</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_8.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>리저브 오렌지 카드 홀더</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_9.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>부산 투어 미니백</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_10.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>빈 데어 코리아 에코백</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_11.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>서울 투어 에코백</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_12.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>스타벅스 1호점 랩탑 파우치</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_13.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>스타벅스 1호점 에코백</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_14.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>어뮤즈먼트 파크 에코백</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_15.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>인천 투어 에코백</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_16.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>제주 손수건 2종 세트</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_17.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>제주 수국 에코백</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_18.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>제주 시티 에코백</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_19.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>제주 유채꽃 에코백</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_20.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>제주 동백 실리콘 스트로 세트 (3EA)</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_21.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>21 제주 동백 핀 세트</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_22.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>더양평DTR 스타벅스 카드</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_23.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>리저브 그린 키 체인</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_24.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>리저브 레드 키 체인</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_25.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>리저브 우드 카드 케이스</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_26.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>리저브 우드 트레이</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_27.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>스타벅스 리유저블 스트로 세트</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_28.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>스튜던트 가죽 펜슬 케이스</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_29.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>어뮤즈먼트 파크 스타 키체인</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_30.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>우리나라 도자 마그넷 세트</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_31.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>제주 수국 베어리스타 키 체인</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_32.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>제주 수국 스노우 글로브</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_33.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>제주 수국 양우산</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/accessories_img/8_34.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>제주 수국 파우치 키 체인</span>
               </div>
             </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/7.jpg" alt="" class="item__img" />
-              <span>SS 리저브 커피 블랙 더블월 머그 355ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/8.jpg" alt="" class="item__img" />
-              <span>경주 투어 머그 355ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/9.jpg" alt="" class="item__img" />
-              <span>그린 사이렌 클래식 머그 237ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/10.jpg" alt="" class="item__img" />
-              <span>그린 사이렌 클래식 머그 355ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/11.jpg" alt="" class="item__img" />
-              <span>그린 사이렌 클래식 머그 473ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/12.jpg" alt="" class="item__img" />
-              <span>리얼 광주 데미머그 89ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/13.jpg" alt="" class="item__img" />
-              <span>리얼 대구 데미머그 89ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/14.jpg" alt="" class="item__img" />
-              <span>리얼 대전 데미머그 89ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/15.jpg" alt="" class="item__img" />
-              <span>리얼 대전 머그 414ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/16.jpg" alt="" class="item__img" />
-              <span>리저브 뉴블랙 머그 355ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/17.jpg" alt="" class="item__img" />
-              <span>리저브 블랙 DW 머그 296ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/18.jpg" alt="" class="item__img" />
-              <span>리저브 화이트 DW 머그 296ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/19.jpg" alt="" class="item__img" />
-              <span>부산 투어 머그 355ml</span>
-            </div>
-            <div class="item" class="item__img">
-              <img src="../../images/gift/mug_img/20.jpg" alt="" />
-              <span>북청사자놀음 데미머그 89ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/21.jpg" alt="" class="item__img" />
-              <span>북청사자놀음 머그 355ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/22.jpg" alt="" class="item__img" />
-              <span>블랙 링 머그 355ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/23.jpg" alt="" class="item__img" />
-              <span>블랙 앤 골드 머그 473ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/24.jpg" alt="" class="item__img" />
-              <span>빈 데어 코리아 데미머그 59ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/25.jpg" alt="" class="item__img" />
-              <span>빈 데어 코리아 머그 414ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/26.jpg" alt="" class="item__img" />
-              <span>서울 제주 데미머그 세트</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/27.jpg" alt="" class="item__img" />
-              <span>서울 투어 머그 355ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/28.jpg" alt="" class="item__img" />
-              <span>스타벅스 1호점 뱃지 머그 414ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/29.jpg" alt="" class="item__img" />
-              <span>스타벅스 1호점 스퀘어 머그 355ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/30.jpg" alt="" class="item__img" />
-              <span>스타벅스 현대카드 슬리브 머그 340ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/31.jpg" alt="" class="item__img" />
-              <span>어뮤즈먼트 파크 좌표 머그 355ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/32.jpg" alt="" class="item__img" />
-              <span>어뮤즈먼트 파크 컬러 머그 355ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/33.jpg" alt="" class="item__img" />
-              <span>우리 한글 블랙 머그 473ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/34.jpg" alt="" class="item__img" />
-              <span>우리 한글 화이트 머그 473ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/35.jpg" alt="" class="item__img" />
-              <span>우리나라 도자 머그 355ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/36.jpg" alt="" class="item__img" />
-              <span>인천 투어 머그 355ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/37.jpg" alt="" class="item__img" />
-              <span>제주 에코컵 세트</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/38.jpg" alt="" class="item__img" />
-              <span>제주 투어 머그 355ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/39.jpg" alt="" class="item__img" />
-              <span>코리아 데미머그 세트(4개입)</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/40.jpg" alt="" class="item__img" />
-              <span>티바나 그린 리드 머그 355ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/41.jpg" alt="" class="item__img" />
-              <span>티바나 포터 머그 355ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/42.jpg" alt="" class="item__img" />
-              <span>티바나 핑크 리드 머그 355ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/43.jpg" alt="" class="item__img" />
-              <span>해운대 엑스더스카이 머그 340ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/44.jpg" alt="" class="item__img" />
-              <span>환구단 스퀘어 머그 355ml</span>
-            </div>
-            <div class="item">
-              <img src="../../images/gift/mug_img/45jpg" alt="" class="item__img" />
-              <span>어뮤즈먼트 파크 시온 글라스 머그 470ml</span>
-            </div>
-          </div>
-        </li>
-        <li class="items" data-type="glass">
-          <h2 class="items__title">글라스</h2>
-          <div class="item__container">
-            <div class="item">
-              <img
-                src="../../images/gift/glass_img/2_1.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>21 서머 고블렛 글라스 355ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
+          </li>
+          <li class="items" data-type="coffee_items">
+            <h2 class="items__title">커피 용품</h2>
+            <div class="item__container">
+              <div class="item">
+                <img
+                  src="../../images/gift/coffee_items_img/6_1.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>언더더씨 글라스 서버 600ml</span>
+                <div class="new_and_limited">
+                  <img src="../../images/gift/new.png" alt="" />
+                  <img src="../../images/gift/limited.png" alt="" />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/coffee_items_img/6_2.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>리저브 블랙 캐니스터</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/coffee_items_img/6_3.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>리저브 블랙 캐니스터</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/coffee_items_img/6_4.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>화이트 사이렌 커피 클립 스쿱</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/coffee_items_img/6_5.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>SS 화이트 스타벅스 케틀</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/coffee_items_img/6_6.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>리저브 블랙 푸어오버 드리퍼</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/coffee_items_img/6_7.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>클래식 푸어 오버 콘 드리퍼</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/coffee_items_img/6_8.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>티바나 루비 레드 티 팟 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/coffee_items_img/6_9.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>티바나 펠트 그린 티 팟 473ml</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/coffee_items_img/6_10.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>화이트 사이렌 그라인더</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/coffee_items_img/6_11.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>밀리타 종이 필터 #2</span>
+              </div>
+              <div class="item">
+                <img
+                  src="../../images/gift/coffee_items_img/6_12.jpg"
+                  alt=""
+                  class="item__img"
+                />
+                <span>밀리타 종이 필터 #4</span>
               </div>
             </div>
-            <div class="item">
-              <img
-                src="../../images/gift/glass_img/2_2.jpg"
-                alt=""
-                class="item__img"
-              />
-              <div class="new_and_limited"></div>
-              <span>21 서머 글리터 핸들 글라스 355ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
+          </li>
+          <li class="items" data-type="tea">
+            <h2 class="items__title">패키지 티(티바나)</h2>
+            <div class="item__container">
+              <div class="item">
+                <img
+                  src="../../images/gift/package_tea_img/7_1.jpg"
+                  alt=""
+                  class="item__img"
+                />
               </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/glass_img/2_3.jpg"
-                alt=""
-                class="item__img"
-              />
-              <div class="new_and_limited"></div>
-              <span>21 서머 해마 글라스 473ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/glass_img/2_4.jpg"
-                alt=""
-                class="item__img"
-              />
-              <div class="new_and_limited"></div>
-              <span>고슴도치 머들러 글라스 355ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/glass_img/2_5.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>스타벅스 현대카드 오로라 글라스 410ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/glass_img/2_6.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>오로라 글라스 콜드컵 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/glass_img/2_7.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>제주 바다 글라스 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/glass_img/2_8.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>티바나 더블월 글라스 355ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/glass_img/2_9.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>티바나 블루 글라스 콜드컵 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/glass_img/2_10.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>티바나 핑크 글라스 콜드컵 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/glass_img/2_11.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>제주 한라산 핸들 글라스 355ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/glass_img/2_12.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>리저브 골드 핸들 글라스 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/glass_img/2_13.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>리저브 콜드브루 글라스 355ml</span>
-            </div>
-          </div>
-        </li>
-        <li class="items" data-type="plastic">
-          <h2 class="items__title">플라스틱 텀블러</h2>
-          <div class="item__container">
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_1.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>레드 리유저블 컵 세트</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_2.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>언더더씨 워터볼 텀블러 355ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_3.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>마레 DW 컬러체인징 텀블러 473ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_4.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>마레 콜드컵 710ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_5.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>서머 민트 스터드 텀블러 710ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_6.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>고슴도치 스퀘어 워터보틀 414ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_7.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>고슴도치 스퀘어 워터보틀 414ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_8.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>마레 지아 워터보틀 473mll</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_9.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>언더더씨 슬림라인 워터보틀 532ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_10.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>리얼 광주 텀블러 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_11.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>리얼 대구 텀블러 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_12.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>리얼 대전 텀블러 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_13.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>마블 화이트 아이코닉 텀블러 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_14.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>빈 데어 코리아 텀블러 355ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_15.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>코리아 훈민정음 텀블러 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_16.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>그린 그러데이션 사이렌 콜드컵 591ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_17.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>그린 팝햅들 콜드컵 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_18.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>블랙 사이렌 콜드컵 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_19.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>블랙 사이렌 콜드컵 591ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_20.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>블랙 사이렌 콜드컵 710ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_21.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>제주 수국 에코컵 세트</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/plastic_tumbler_img/3_22.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>21 제주 동백 레나 워터보틀 473ml</span>
-            </div>
-          </div>
-        </li>
-        <li class="items" data-type="stainless">
-          <h2 class="items__title">스테인리스 텀블러</h2>
-          <div class="item__container">
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_1.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 마레 힐사이드 텀블러 355ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_2.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 미르 고슴도치 텀블러 473ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_3.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 미르 핸들 고슴도치 텀블러 591ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_4.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 언더더씨 DW 투고 텀블러 473ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_5.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 언더더씨 야빈 텀블러 473ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_6.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 3.1 필립림 레인포레스트 콜드컵 473ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_7.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 3.1 필립림 코랄 콜드컵 473ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_8.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 마레 스탠리 플라스크 237ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_9.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 고슴도치 데일리 워터보틀 473ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_10.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS DW 그린 워드마크 투고 텀블러 591ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_11.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 경주 투어 텀블러 355ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_12.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 루시 레터 슬리브 텀블러 355ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_13.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 마블 화이트 오페라 텀블러 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_14.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 부산 투어 텀블러 355m</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_15.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 북청사자놀음 텀블러 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_16.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 블랙 헤리티지 오드리 텀블러 355ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_17.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 서울 투어 텀블러 355ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_18.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 엘마 블랙 텀블러 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_19.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 우리나라 도자 텀블러 355ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_20.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 인천 투어 텀블러 355ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_21.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 제주 수국 트로이 텀블러 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_22.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 제주 투어 텀블러 355ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_23.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 처비 사이렌 텀블러 355ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_24.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 컨투어 워드마크 텀블러 355ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_25.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 콩코드 사이렌 화이트 텀블러 591ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_26.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 트로이 스타벅스 1호점 텀블러 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_27.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 티바나 다니엘 텀블러 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_28.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 티바나 햄튼 텀블러 355ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_29.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 환구단 트로이 텀블러 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_30.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 그린 처비 핸들 텀블러 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_31.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 리저브 블랙 콜드컵 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_32.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 블랙 앤 골드 콜드컵 591ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_33.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 블랙 헤리티지 터커 콜드컵 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/stainless_tumbler_img/4_34.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 리저브 화이트 워터보틀 591ml</span>
-            </div>
-          </div>
-        </li>
-        <li class="items" data-type="thermos">
-          <h2 class="items__title">보온병</h2>
-          <div class="item__container">
-            <div class="item">
-              <img
-                src="../../images/gift/thermos_img/5_1.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 마레 스탠리 베이츠 보온병 473ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/thermos_img/5_2.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 마레 스탠리 통가 보온병 710ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/thermos_img/5_3.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 마레 스탠리 푸드 자 414ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/thermos_img/5_4.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>JMZ 그린 사이렌 보온병 350ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/thermos_img/5_5.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>JNL 어뮤즈먼트 파크 보온병 500ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/thermos_img/5_6.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>JNO 마블 화이트 보온병 500ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/thermos_img/5_7.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 블랙 앤 골드 스탠리 보온병 500ml</span>
-            </div>
-          </div>
-        </li>
-        <li class="items" data-type="accessories">
-          <h2 class="items__title">액세서리</h2>
-          <div class="item__container">
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_1.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>21 서머1 마레 보틀 파우치</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_2.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>21 서머1 마레 폴더블 백팩</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_3.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>21 서머 1 스탠리 런치 박스</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_4.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>해운대 엑스더스카이 머들러</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_5.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>21 제주 동백 트래블 파우치</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_6.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>경주 투어 미니백</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_7.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>리저브 블루 카드 홀더</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_8.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>리저브 오렌지 카드 홀더</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_9.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>부산 투어 미니백</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_10.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>빈 데어 코리아 에코백</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_11.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>서울 투어 에코백</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_12.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>스타벅스 1호점 랩탑 파우치</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_13.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>스타벅스 1호점 에코백</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_14.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>어뮤즈먼트 파크 에코백</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_15.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>인천 투어 에코백</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_16.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>제주 손수건 2종 세트</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_17.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>제주 수국 에코백</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_18.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>제주 시티 에코백</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_19.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>제주 유채꽃 에코백</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_20.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>제주 동백 실리콘 스트로 세트 (3EA)</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_21.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>21 제주 동백 핀 세트</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_22.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>더양평DTR 스타벅스 카드</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_23.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>리저브 그린 키 체인</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_24.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>리저브 레드 키 체인</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_25.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>리저브 우드 카드 케이스</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_26.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>리저브 우드 트레이</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_27.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>스타벅스 리유저블 스트로 세트</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_28.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>스튜던트 가죽 펜슬 케이스</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_29.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>어뮤즈먼트 파크 스타 키체인</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_30.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>우리나라 도자 마그넷 세트</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_31.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>제주 수국 베어리스타 키 체인</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_32.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>제주 수국 스노우 글로브</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_33.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>제주 수국 양우산</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/accessories_img/8_34.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>제주 수국 파우치 키 체인</span>
-            </div>
-          </div>
-        </li>
-        <li class="items" data-type="coffee_items">
-          <h2 class="items__title">커피 용품</h2>
-          <div class="item__container">
-            <div class="item">
-              <img
-                src="../../images/gift/coffee_items_img/6_1.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>언더더씨 글라스 서버 600ml</span>
-              <div class="new_and_limited">
-                <img src="../../images/gift/new.png" alt="" />
-                <img src="../../images/gift/limited.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/coffee_items_img/6_2.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>리저브 블랙 캐니스터</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/coffee_items_img/6_3.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>리저브 블랙 캐니스터</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/coffee_items_img/6_4.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>화이트 사이렌 커피 클립 스쿱</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/coffee_items_img/6_5.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>SS 화이트 스타벅스 케틀</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/coffee_items_img/6_6.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>리저브 블랙 푸어오버 드리퍼</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/coffee_items_img/6_7.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>클래식 푸어 오버 콘 드리퍼</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/coffee_items_img/6_8.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>티바나 루비 레드 티 팟 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/coffee_items_img/6_9.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>티바나 펠트 그린 티 팟 473ml</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/coffee_items_img/6_10.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>화이트 사이렌 그라인더</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/coffee_items_img/6_11.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>밀리타 종이 필터 #2</span>
-            </div>
-            <div class="item">
-              <img
-                src="../../images/gift/coffee_items_img/6_12.jpg"
-                alt=""
-                class="item__img"
-              />
-              <span>밀리타 종이 필터 #4</span>
-            </div>
-          </div>
-        </li>
-        <li class="items" data-type="tea">
-          <h2 class="items__title">패키지 티(티바나)</h2>
-          <div class="item__container">
-            <div class="item">
-              <img
-                src="../../images/gift/package_tea_img/7_1.jpg"
-                alt=""
-                class="item__img"
-              />
-            </div>
-          </di>
-        </li>
-        <li class="items" data-type="planner">
-          <h2 class="items__title">스타벅스 플래너</h2>
-        </li>
+            </di>
+          </li>
+          <li class="items" data-type="planner">
+            <h2 class="items__title">스타벅스 플래너</h2>
+          </li>
       </ul>
-    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer_wrap">
+        <div class="footer_menus">
+          <ul>
+            <li class="footer_menus_title"><a href="#">company</a></li>
+            <li><a href="#">한눈에 보기</a></li>
+            <li><a href="#">스타벅스 사명</a></li>
+            <li><a href="#">스타벅스 소개</a></li>
+            <li><a href="#">국제 뉴스룸</a></li>
+            <li><a href="#">세계의 스타벅스</a></li>
+            <li><a href="#">글로벌 뉴스룸</a></li>
+          </ul>
+          <ul>
+            <li class="footer_menus_title">
+              <a href="#">corporate sales</a>
+            </li>
+            <li><a href="#">단체 및 기업 구매 안내</a></li>
+          </ul>
+          <ul>
+            <li class="footer_menus_title"><a href="#">partnership</a></li>
+            <li><a href="#">신규 입점 제의</a></li>
+            <li><a href="#">협력 고객사 등록신청</a></li>
+          </ul>
+          <ul>
+            <li class="footer_menus_title">
+              <a href="">online community</a>
+            </li>
+            <li><a href="#">페이스북</a></li>
+            <li><a href="#">트위터</a></li>
+            <li><a href="#">유튜브</a></li>
+            <li><a href="#">블로그</a></li>
+            <li><a href="#">인스타그램</a></li>
+          </ul>
+          <ul>
+            <li class="footer_menus_title"><a href="#">recruit</a></li>
+            <li><a href="#">채용 소개</a></li>
+            <li><a href="#">채용 지원하기</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_award">
+        <div class="footer_award_inner">
+          <ul class="footer_award_slider">
+            <li>
+              <a href="#"
+                ><img
+                  src="https://image.istarbucks.co.kr/common/img/footer/footer_award17_01.jpg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://image.istarbucks.co.kr/common/img/footer/footer_award17_02.jpg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://image.istarbucks.co.kr/common/img/footer/footer_award17_03.jpg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://image.istarbucks.co.kr/common/img/footer/footer_award17_04.jpg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://image.istarbucks.co.kr/common/img/footer/footer_award17_05.jpg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://image.istarbucks.co.kr/common/img/footer/footer_award17_06.jpg"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <a class="first" href="#">개인정보처리방침 </a>
+        <a href="#">영상정보처리기기 운영관리 방침</a>
+        <a href="#">홈페이지 이용약관</a>
+        <a href="#">위치정보 이용약관</a>
+        <a href="#">스타벅스 카드 이용약관</a>
+        <a href="#">비회원 이용약관</a>
+        <a href="#">My DT Pass 서비스 이용약관</a>
+        <a href="#">윤리경영 핫라인</a>
+        <br />
+        <a class="btn_link" href="#">찾아오시는 길</a>
+        <a class="btn_link" href="#">신규입점제의</a>
+        <a class="btn_link" href="#">사이트 맵</a>
+        <ul class="copy_menu">
+          <li>사업자등록번호 : 201-81-21515</li>
+          <li>(주)스타벅스커피 코리아 대표이사 : 송 데이비드 호섭</li>
+          <li>TEL : 1522-3232</li>
+          <li>개인정보 책임자 : 하익성</li>
+        </ul>
+        <span class="copy"
+          >ⓒ 2021 Starbucks Coffee Company. All Rights Reserved.</span
+        >
+      </div>
+    </footer>
   </body>
 </html>

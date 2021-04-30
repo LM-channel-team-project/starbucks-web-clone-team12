@@ -24,7 +24,7 @@ checkboxBtnContainer.addEventListener('click', (e) => {
 
 // toggle searchBtn
 const upBtn = document.querySelector('.search__upBtn');
-const searchContainer = document.querySelector('.search__container');
+const searchContainer = document.querySelector('.searchBtn');
 const i = document.querySelector('.fa-chevron-up')
 
 upBtn.addEventListener('click', () => {
