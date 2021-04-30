@@ -164,9 +164,9 @@ span {
   width: 100%;
 }
 
-/* .searchBtn.active {
+.searchBtn.active {
   display: none;
-} */
+}
 
 .searchBtn__container {
   display: flex;
