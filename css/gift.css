@@ -249,6 +249,7 @@ span {
   align-items: center;
   margin-top: 70px;
   color: var(--black-color);
+  width: 1200px;
 }
 
 .item__container {
