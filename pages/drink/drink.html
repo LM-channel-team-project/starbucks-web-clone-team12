@@ -86,7 +86,7 @@
                             <li>
                               <input
                                 type="checkbox"
-                                name="product_all"
+                                name="product"
                                 data-key="category"
                                 data-value="all"
                                 id="all"
@@ -96,7 +96,7 @@
                             <li>
                               <input
                                 type="checkbox"
-                                name="product_cold_brew"
+                                name="product"
                                 id="coldBrew"
                                 data-key="category"
                                 data-value="coldBrew"
@@ -108,7 +108,7 @@
                             <li>
                               <input
                                 type="checkbox"
-                                name="product_brood"
+                                name="product"
                                 id="brood"
                                 data-value="brood"
                                 data-key="category"
@@ -120,7 +120,7 @@
                                 type="checkbox"
                                 data-key="category"
                                 data-value="espresso"
-                                name="product_espresso"
+                                name="product"
                                 id="espresso"
                               />
                               <label for="product_espresso">에스프레소</label>
@@ -130,7 +130,7 @@
                                 type="checkbox"
                                 data-key="category"
                                 data-value="frappuccino"
-                                name="product_frappuccino"
+                                name="product"
                                 id="frappuccino"
                               />
                               <label for="product_frappuccino"
@@ -142,7 +142,7 @@
                                 type="checkbox"
                                 data-key="category"
                                 data-value="blended"
-                                name="product_blended"
+                                name="product"
                                 id="blended"
                               />
                               <label for="product_blended">블렌디드</label>
@@ -152,7 +152,7 @@
                                 type="checkbox"
                                 data-key="category"
                                 data-value="fizzo"
-                                name="product_fizzo"
+                                name="product"
                                 id="fizzo"
                               />
                               <label for="product_fizzo">스타벅스 피지오</label>
@@ -162,7 +162,7 @@
                                 type="checkbox"
                                 data-key="category"
                                 data-value="tea"
-                                name="product_tea"
+                                name="product"
                                 id="tea"
                               />
                               <label for="product_tea">티 (티바나)</label>
@@ -172,7 +172,7 @@
                                 type="checkbox"
                                 data-key="category"
                                 data-value="etc"
-                                name="product_etc"
+                                name="product"
                                 id="etc"
                               />
                               <label for="product_etc">기타 제조 음료</label>
@@ -182,7 +182,7 @@
                                 type="checkbox"
                                 data-key="category"
                                 data-value="juice"
-                                name="product_juice"
+                                name="product"
                                 id="juice"
                               />
                               <label for="product_juice"
@@ -211,7 +211,9 @@
             </dl>
           </div>
         </div>
+        <!-- 카테고리 리스트 -->
         <div class="categoryList" id="category">
+          <div class="category_title"></div>
           <ul class="list"></ul>
         </div>
         <div class="themeList">

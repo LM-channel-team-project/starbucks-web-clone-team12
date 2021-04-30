@@ -8,36 +8,37 @@ loadItems().then((items) => {
 });
 
 const setEventListeners = (items) => {
-  document
-    .getElementById("coldBrew")
-    .addEventListener("click", (event) => filter(event, items));
-  document
-    .getElementById("brood")
-    .addEventListener("click", (event) => filter(event, items));
-  document
-    .getElementById("espresso")
-    .addEventListener("click", (event) => filter(event, items));
-  document
-    .getElementById("frappuccino")
-    .addEventListener("click", (event) => filter(event, items));
-  document
-    .getElementById("blended")
-    .addEventListener("click", (event) => filter(event, items));
-  document
-    .getElementById("fizzo")
-    .addEventListener("click", (event) => filter(event, items));
-  document
-    .getElementById("tea")
-    .addEventListener("click", (event) => filter(event, items));
-  document
-    .getElementById("etc")
-    .addEventListener("click", (event) => filter(event, items));
-  document
-    .getElementById("juice")
-    .addEventListener("click", (event) => filter(event, items));
+  document.getElementById("coldBrew").addEventListener("click", (event) => {
+    filter(event, items);
+  });
+  document.getElementById("brood").addEventListener("click", (event) => {
+    filter(event, items);
+  });
+  document.getElementById("espresso").addEventListener("click", (event) => {
+    filter(event, items);
+  });
+  document.getElementById("frappuccino").addEventListener("click", (event) => {
+    filter(event, items);
+  });
+  document.getElementById("blended").addEventListener("click", (event) => {
+    filter(event, items);
+  });
+  document.getElementById("fizzo").addEventListener("click", (event) => {
+    filter(event, items);
+  });
+  document.getElementById("tea").addEventListener("click", (event) => {
+    filter(event, items);
+  });
+  document.getElementById("etc").addEventListener("click", (event) => {
+    filter(event, items);
+  });
+  document.getElementById("juice").addEventListener("click", (event) => {
+    filter(event, items);
+  });
 };
 
 const filter = (event, items) => {
+  console.log(event.target);
   const { value } = event.target.dataset;
   const allowed = [`${value}`];
   const filtered = Object.keys(items)
@@ -47,16 +48,27 @@ const filter = (event, items) => {
     }, {});
   result = Object.values(filtered);
   DisplayItems(event, result);
+  const obj = document.getElementsByName("product");
+  const a = event.target;
+  for (let i = 0; i < obj.length; i++) {
+    if (obj[i] != a) {
+      obj[i].checked = false;
+    }
+  }
 };
 
 const DisplayItems = (event, items) => {
+  const title = document.querySelector(".category_title");
   const container = document.querySelector(".list");
   if (event.target.checked) {
+    title.innerHTML = items.map((title) => title[0].category);
+    title.style.display = "block";
     container.innerHTML = items.map((item) =>
       item.map((sub) => createHTMLString(sub)).join("")
     );
   } else {
     container.innerHTML = "";
+    title.style.display = "none";
   }
 };
 
