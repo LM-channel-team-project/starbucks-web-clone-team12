@@ -164,9 +164,9 @@ span {
   width: 100%;
 }
 
-.searchBtn.active {
+/* .searchBtn.active {
   display: none;
-}
+} */
 
 .searchBtn__container {
   display: flex;
@@ -200,8 +200,6 @@ span {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* padding: 20px; */
-  /* display: none; */
 }
 
 .search__checkbox li {

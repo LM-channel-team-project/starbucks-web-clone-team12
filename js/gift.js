@@ -33,6 +33,26 @@ upBtn.addEventListener('click', () => {
   i.classList.toggle('fa-chevron-up');
 });
 
+// switch categoryBtn and themeBtn
+const categoryBtn = document.querySelector('.category');
+const themeBtn = document.querySelector('.theme');
+const checkbox = document.querySelector('.search__checkbox');
+const theme = document.querySelector('.search__theme');
+
+themeBtn.addEventListener('click', () => {
+  themeBtn.classList.add('active');
+  categoryBtn.classList.remove('active');
+  document.querySelector('.search__checkbox').style.display = 'none';
+  document.querySelector('.search__theme').style.display = 'block';
+});
+
+categoryBtn.addEventListener('click', () => {
+  categoryBtn.classList.add('active');
+  themeBtn.classList.remove('active');
+  document.querySelector('.search__checkbox').style.display = 'flex';
+  document.querySelector('.search__theme').style.display = 'none';
+});
+
 
 
 
