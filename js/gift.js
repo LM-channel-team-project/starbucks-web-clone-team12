@@ -23,21 +23,21 @@ checkboxBtnContainer.addEventListener('click', (e) => {
 });
 
 // toggle searchBtn
+
 const upBtn = document.querySelector('.search__upBtn');
 const searchContainer = document.querySelector('.searchBtn');
-const i = document.querySelector('.fa-chevron-up')
+const i = document.querySelector('.fa-chevron-down')
 
 upBtn.addEventListener('click', () => {
   searchContainer.classList.toggle('active');
-  i.classList.toggle('fa-chevron-down');
   i.classList.toggle('fa-chevron-up');
+  i.classList.toggle('fa-chevron-down');
 });
 
 // switch categoryBtn and themeBtn
+
 const categoryBtn = document.querySelector('.category');
 const themeBtn = document.querySelector('.theme');
-const checkbox = document.querySelector('.search__checkbox');
-const theme = document.querySelector('.search__theme');
 
 themeBtn.addEventListener('click', () => {
   themeBtn.classList.add('active');
@@ -52,6 +52,7 @@ categoryBtn.addEventListener('click', () => {
   document.querySelector('.search__checkbox').style.display = 'flex';
   document.querySelector('.search__theme').style.display = 'none';
 });
+
 
 
 
