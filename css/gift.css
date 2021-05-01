@@ -40,7 +40,8 @@ body {
 }
 
 .container {
-  margin: 15px;
+  width: 100%;
+  padding: 20px;
 }
 
 span {
@@ -51,70 +52,76 @@ span {
 /* navbar */
 
 .navbar {
-  width: 100%;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-  padding: 10px;
   background-color: var(--cleam-color);
+  width: 100%;
+  position: sticky;
+  top:0;
+  z-index: 2;
+}
+
+.navbar__container {
+  background-color: var(--cleam-color);
+  max-width: 1200px;
+  display: flex;
+  justify-content:space-between ;
+  margin: auto;
+  padding: 20px;
 }
 
 .navbar__menu {
+  background-color: var(--cleam-color);
   display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+  font-size: 20px;
 }
 
-.navbar__menu__item {
-  padding: 10px 10px;
-  margin: 0 30px;
+.navbar__menu__item a{
+  padding: 10px 30px 50px;
   text-transform: uppercase;
 }
 
 .navbar__menu__item a:hover {
-  color: var(--yellow-green-color);
+  background-color: var(--light-black-color);
   text-decoration: underline;
+  color: var(--yellow-green-color);
 }
 
-.dropdown {
+/* header */
+
+.header {
   width: 100%;
 }
 
-.dropdown ul {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: var(--light-black-color);
-  color: white;
-}
-
-.dropdown__item {
-  font-size: 1rem;
-  padding: 10px 10px;
-  margin: 10px;
-}
-
-
-/* content */
-
-.title {
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  color: var(--black-color);
+.header__container {
   position: relative;
-  margin-bottom: 10px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: auto;
 }
 
-.title span {
+.header__title {
+  font-size: 38px;
+  font-weight: 600;
+  color: var(--black-color);
+}
+
+.header__nav {
   position: absolute;
-  bottom: 5px;
-  right: 10px;
+  bottom: 0px;
+  right: 5px;
 }
 
-.title a:hover {
-  text-decoration: underline;
-}
+/* search */
 
 .search {
+  width: 100%;
+  padding: 20px;
+}
+
+.search__container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -123,7 +130,6 @@ span {
   padding: 0px 25px;
   max-width: 1200px;
   margin: auto;
-
 }
 
 .search h2 {
@@ -153,22 +159,22 @@ span {
   top: 5px;
 }
 
-.search__container {
+.searchBtn {
   border-top: 1px solid #ccc;
   width: 100%;
 }
 
-.search__container.active {
+.searchBtn.active {
   display: none;
 }
 
-.search__btn {
+.searchBtn__container {
   display: flex;
   text-align: center;
   padding: 25px 0 15px;
 }
 
-.search__btn button {
+.searchBtn__container button {
   width: 200px;
   height: 35px;
   border-radius: 4px;
@@ -177,11 +183,11 @@ span {
   color: var(--black-color);
 }
 
-.search__btn button:hover {
+.searchBtn__container button:hover {
   text-decoration: underline;
 }
 
-.search__btn .active {
+.searchBtn__container .active {
   background-color: var(--green-color);
   color: white;
 }
@@ -191,25 +197,64 @@ span {
   max-width: 800px;
   margin-bottom: 20px;
   color: var(--black-color);
-  /* display: none; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.search__checkbox button::before {
-  content: '';
-  display: inline-block;
-  height: 10px;
-  width: 10px;
-  margin-right: 5px;
-  border: 1px solid #ccc;
+.search__checkbox li {
+  margin-right: 20px;
+  padding: 5px;
 }
 
-.search__checkbox button .active::before {
-  content: '';
+label {
+  user-select: none;
+  font-size: 16px;
+}
+
+[type="checkbox"] {
+  display: none;
+}
+
+[type="checkbox"] + label {
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
   display: inline-block;
-  height: 10px;
+  line-height: 16px;
+}
+
+[type="checkbox"] + label::before {
+  content:"";
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 10px;
-  margin-right: 5px;
-  border: 1px solid #ccc;
+  height: 10px;
+  outline: 1px solid #ccc;
+  background: #fff;
+}
+
+[type="checkbox"]:checked + label::before {
+  content:"";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  outline: 1px solid #006533;
+  background: #fff;
+}
+
+[type="checkbox"]:checked + label::before {
+  content:"";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-image: url(../images/gift/check.png);
+  background-size: contain;
 }
 
 .search__theme {
@@ -226,15 +271,19 @@ span {
 }
 
 
-/* Content */
+/* Items */
+
 .items.invisible {
   display: none;
 }
 
-.items_container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+#items {
+  width: 100%;
+  padding: 20px;
+}
+
+.items__container {
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -249,14 +298,12 @@ span {
   align-items: center;
   margin-top: 70px;
   color: var(--black-color);
-  width: 1200px;
 }
 
 .item__container {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  max-width: 1200px;
 }
 
 .item {
@@ -294,3 +341,107 @@ span {
   bottom: 60px;
   left: 20px;
 }
+
+/* footer */
+#footer {
+  padding: 32px 0 35px 0;
+  background: #2c2a29;
+  position: relative;
+  width: 100%;
+}
+
+.footer_wrap {
+  margin-left: -550px;
+  width: 1100px;
+  background: url(https://www.starbucks.co.kr/common/img/footer/footer_logo.png)
+    right 8px no-repeat;
+  display: inline-block;
+  left: 50%;
+  position: relative;
+}
+.footer_menus ul {
+  width: 220px;
+  float: left;
+}
+.footer_menus ul li a {
+  color: #fff;
+  font-size: 12px;
+  line-height: 24px;
+}
+.footer_menus ul .footer_menus_title a {
+  font-size: 14px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.footer_award {
+  height: 80px;
+  margin-top: 40px;
+  background: #282828;
+  position: relative;
+  width: 100%;
+}
+
+.footer_award .footer_award_inner {
+  height: 64px;
+  margin-left: -567px;
+  top: 8px;
+  width: 1134px;
+  left: 50%;
+  position: absolute;
+}
+
+.footer_award_inner ul {
+  display: inline-block;
+}
+.footer_award_inner ul li {
+  float: left;
+}
+
+.copyright {
+  color: #999;
+  font-size: 12px;
+  line-height: 18px;
+  margin-left: -50%;
+  padding-top: 30px;
+  text-align: center;
+  width: 100%;
+  left: 50%;
+  position: relative;
+}
+.copyright a {
+  border-right: 1px solid #393939;
+  color: #ccc;
+  font-size: 12px;
+  padding: 0 10px;
+}
+.copyright .first {
+  color: #00b050 !important;
+  font-weight: bold;
+}
+.copyright .btn_link {
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  margin: 10px 2px 0 3px;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+}
+.copy_menu {
+  padding: 25px 0 5px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.copy_menu li {
+  line-height: 1.3;
+  display: inline-block;
+  margin: 0 7px;
+}
+.copyright .copy {
+  display: inline-block;
+  line-height: 40px;
+}
+@import "footer.css";
