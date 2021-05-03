@@ -5,6 +5,8 @@ const loadItems = async () =>
 
 loadItems().then((items) => {
   setEventListeners(items);
+  const allClick = document.getElementById("all");
+  allClick.addEventListener("click", (event) => Allfilter(event, items));
 });
 
 const setEventListeners = (items) => {
@@ -36,9 +38,24 @@ const setEventListeners = (items) => {
     filter(event, items);
   });
 };
+const Allfilter = (event, items) => {
+  for (var key in items) {
+    items[key].map((item) => AllDisplay(event, item));
+    Object.keys(items);
+  }
+};
+
+const AllDisplay = (event, item) => {
+  const title = document.querySelector(".category_title");
+  const container = document.querySelector(".list");
+
+  if (event.target.checked) {
+    title.innerHTML = item.category;
+    container.innerHTML = createHTMLString(item);
+  }
+};
 
 const filter = (event, items) => {
-  console.log(event.target);
   const { value } = event.target.dataset;
   const allowed = [`${value}`];
   const filtered = Object.keys(items)
@@ -46,8 +63,11 @@ const filter = (event, items) => {
     .reduce((obj, key) => {
       return { ...obj, [key]: items[key] };
     }, {});
+
   result = Object.values(filtered);
+
   DisplayItems(event, result);
+
   const obj = document.getElementsByName("product");
   const a = event.target;
   for (let i = 0; i < obj.length; i++) {
