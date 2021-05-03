@@ -5,11 +5,12 @@ const loadItems = async () =>
 
 loadItems().then((items) => {
   setEventListeners(items);
-  const allClick = document.getElementById("all");
-  allClick.addEventListener("click", (event) => Allfilter(event, items));
 });
 
 const setEventListeners = (items) => {
+  document.getElementById("all").addEventListener("click", (event) => {
+    filter(event, items);
+  });
   document.getElementById("coldBrew").addEventListener("click", (event) => {
     filter(event, items);
   });
@@ -38,35 +39,26 @@ const setEventListeners = (items) => {
     filter(event, items);
   });
 };
-const Allfilter = (event, items) => {
-  for (var key in items) {
-    items[key].map((item) => AllDisplay(event, item));
-    Object.keys(items);
-  }
-};
-
-const AllDisplay = (event, item) => {
-  const title = document.querySelector(".category_title");
-  const container = document.querySelector(".list");
-
-  if (event.target.checked) {
-    title.innerHTML = item.category;
-    container.innerHTML = createHTMLString(item);
-  }
-};
 
 const filter = (event, items) => {
   const { value } = event.target.dataset;
-  const allowed = [`${value}`];
-  const filtered = Object.keys(items)
-    .filter((key) => allowed.includes(key))
-    .reduce((obj, key) => {
+  if (value === "all") {
+    const allInclude = Object.keys(items).reduce((obj, key) => {
       return { ...obj, [key]: items[key] };
     }, {});
+    allResult = Object.values(allInclude);
+    DisplayItems(event, allResult);
+  } else {
+    const allowed = [`${value}`];
+    const filtered = Object.keys(items)
+      .filter((key) => allowed.includes(key))
+      .reduce((obj, key) => {
+        return { ...obj, [key]: items[key] };
+      }, {});
 
-  result = Object.values(filtered);
-
-  DisplayItems(event, result);
+    result = Object.values(filtered);
+    DisplayItems(event, result);
+  }
 
   const obj = document.getElementsByName("product");
   const a = event.target;
@@ -78,20 +70,33 @@ const filter = (event, items) => {
 };
 
 const DisplayItems = (event, items) => {
+  const { value } = event.target.dataset;
   const title = document.querySelector(".category_title");
   const container = document.querySelector(".list");
-  if (event.target.checked) {
-    title.innerHTML = items.map((title) => title[0].category);
-    title.style.display = "block";
-    container.innerHTML = items.map((item) =>
-      item.map((sub) => createHTMLString(sub)).join("")
-    );
+  if (value === "all") {
+    if (event.target.checked) {
+      title.innerHTML = items.map((title) => title[0].category);
+      title.style.display = "block";
+      container.innerHTML = items.map((item) =>
+        item.map((sub) => createHTMLString(sub)).join("")
+      );
+    } else {
+      container.innerHTML = "";
+      title.style.display = "none";
+    }
   } else {
-    container.innerHTML = "";
-    title.style.display = "none";
+    if (event.target.checked) {
+      title.innerHTML = items.map((title) => title[0].category);
+      title.style.display = "block";
+      container.innerHTML = items.map((item) =>
+        item.map((sub) => createHTMLString(sub)).join("")
+      );
+    } else {
+      container.innerHTML = "";
+      title.style.display = "none";
+    }
   }
 };
-
 const createHTMLString = (items) => {
   return `
     <li class="item">
