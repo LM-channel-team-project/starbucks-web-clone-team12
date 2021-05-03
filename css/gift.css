@@ -23,6 +23,7 @@ ul,
 li {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 a {
@@ -71,13 +72,13 @@ span {
 .navbar__menu {
   background-color: var(--cleam-color);
   display: flex;
-  justify-content: space-evenly;
   align-items:center;
   font-size: 20px;
+  position: relative;
 }
 
-.navbar__menu__item a{
-  padding: 10px 30px 50px;
+.navbar__menu__item > a{
+  padding: 10px 30px 30px;
   text-transform: uppercase;
 }
 
@@ -86,6 +87,38 @@ span {
   text-decoration: underline;
   color: var(--yellow-green-color);
 }
+
+.navbar__container > ul li{
+  float: left;
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.navbar__container > ul li a {
+  display: block;
+}
+
+.dropdown__item a:hover {
+  background-color: var(--light-black-color);
+  color: var(--yellow-green-color)
+}
+
+.dropdown__item {
+  display: none;
+  background-color: var(--light-black-color);
+}
+
+.dropdown__item a {
+  font-size: 16px;
+  color: #999;
+}
+
+.navbar__menu__item:hover .dropdown__item {
+  display: block;
+}
+
 
 /* header */
 
