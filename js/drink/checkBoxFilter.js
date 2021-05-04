@@ -4,38 +4,48 @@ const loadItems = async () =>
     .then((json) => json);
 
 loadItems().then((items) => {
+  allDisplay(items);
   setEventListeners(items);
 });
+// 모두 보여주기
+const allDisplay = (items) => {
+  const allInclude = Object.keys(items).reduce((obj, key) => {
+    return { ...obj, [key]: items[key] };
+  }, {});
+  allResult = Object.values(allInclude);
+  const title = document.querySelector(".category_title");
+  const container = document.querySelector(".list");
+  title.style.display = "block";
+  title.innerHTML = allResult.map((title) => title[0].category);
+  container.innerHTML = allResult.map((item) =>
+    item
+      .map((sub) => createHTMLString(sub))
+      .join("")
+      .split()
+  );
+};
 
+// 체크박스 체크 할때
 const setEventListeners = (items) => {
-  document.getElementById("all").addEventListener("click", (event) => {
-    filter(event, items);
-  });
-  document.getElementById("coldBrew").addEventListener("click", (event) => {
-    filter(event, items);
-  });
-  document.getElementById("brood").addEventListener("click", (event) => {
-    filter(event, items);
-  });
-  document.getElementById("espresso").addEventListener("click", (event) => {
-    filter(event, items);
-  });
-  document.getElementById("frappuccino").addEventListener("click", (event) => {
-    filter(event, items);
-  });
-  document.getElementById("blended").addEventListener("click", (event) => {
-    filter(event, items);
-  });
-  document.getElementById("fizzo").addEventListener("click", (event) => {
-    filter(event, items);
-  });
-  document.getElementById("tea").addEventListener("click", (event) => {
-    filter(event, items);
-  });
-  document.getElementById("etc").addEventListener("click", (event) => {
-    filter(event, items);
-  });
-  document.getElementById("juice").addEventListener("click", (event) => {
+  const checkType = [
+    "all",
+    "coldBrew",
+    "brood",
+    "espresso",
+    "frappuccino",
+    "blended",
+    "fizzo",
+    "tea",
+    "etc",
+    "juice",
+  ];
+  for (let count = 0; count < checkType.length; count++) {
+    checkboxDocument(`${checkType[count]}`, items);
+  }
+};
+
+const checkboxDocument = (id, items) => {
+  document.getElementById(`${id}`).addEventListener("click", (event) => {
     filter(event, items);
   });
 };
@@ -55,7 +65,6 @@ const filter = (event, items) => {
       .reduce((obj, key) => {
         return { ...obj, [key]: items[key] };
       }, {});
-
     result = Object.values(filtered);
     DisplayItems(event, result);
   }
@@ -71,6 +80,7 @@ const filter = (event, items) => {
 
 const DisplayItems = (event, items) => {
   const { value } = event.target.dataset;
+
   const title = document.querySelector(".category_title");
   const container = document.querySelector(".list");
   if (value === "all") {
