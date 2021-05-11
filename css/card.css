@@ -13,6 +13,7 @@
 .contents-layout {
     max-width: 1100px;
     margin: 0 auto;
+    /*border: 1px solid #000; */
 }
 .flex {
     display: flex;
@@ -148,7 +149,78 @@
     font-size: 14px;
     padding: 20px 0 40px 0;
 }
-.imgwrap dt{
+.imgwrap dt {
     overflow: hidden;
     border-radius: 5px;
+}
+.footer {
+    background-color: #2C2A29;
+    height: 550px;
+    color: #fff;
+    margin-top: 100px;
+}
+.footer-wrap {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 150px 50px 150px;
+}
+.footer-wrap ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.footer-wrap ul li:first-child {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+.footer-wrap ul li a {
+    color: #fff;
+    font-size: 12px;
+}
+.footer-wrap ul li a:hover {
+    text-decoration: underline;
+}
+.footer-imgwrap ul {
+    display: flex;
+    background-color: #282828;
+    justify-content: center;
+    padding: 10px 0 30px 0;
+    margin-bottom: 40px;
+}
+.footer-copyright ul {
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+}
+.footer-copyright ul li a {
+    color: #fff;
+    padding: 0px 10px;
+    border-right: 1px solid #3C3C3C;
+}
+.footer-copyright .important {
+    color: #00b050;
+    font-weight: bolder;
+}
+.footer-copyright ul li a:hover {
+    text-decoration: underline;
+}
+.footer-copyright span {
+    display: flex;
+    justify-content: center;
+}
+.copyright-btn a {
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px 0px;
+    text-align: center;
+    margin: 15px 5px;
+    font-size: 11px;
+    width: 110px;
+}
+.footer-copyright p {
+    color: #999;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
 }
