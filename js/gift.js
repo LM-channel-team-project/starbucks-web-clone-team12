@@ -4,14 +4,13 @@
 
 const checkboxBtnContainer = document.querySelector('.search__checkbox');
 const itemsContainer = document.querySelector('.items_container');
-const items = document.querySelectorAll('.items');
+const items = document.querySelectorAll('.items__category');
 
 checkboxBtnContainer.addEventListener('click', (e) => {
   const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
   if (filter == null) {
     return;
   }
-  console.log(filter);
 
   items.forEach((item) => {
     if (filter ==='*' || filter === item.dataset.type) {
@@ -32,6 +31,8 @@ upBtn.addEventListener('click', () => {
   searchContainer.classList.toggle('active');
   i.classList.toggle('fa-chevron-up');
   i.classList.toggle('fa-chevron-down');
+  const addMargin = document.querySelector('.search__titleAndMorebtn');
+  addMargin.classList.toggle('open');
 });
 
 // switch categoryBtn and themeBtn
