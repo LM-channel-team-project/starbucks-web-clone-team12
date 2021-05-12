@@ -1,5 +1,6 @@
 "use strict";
 const drinkKindButtonImage = document.querySelector("#kind_btn");
+const icon = document.querySelector(".fa-chevron-down");
 const drink_kind_check_view = document.querySelector("#drink_kind_check");
 const drinkKindTab = document.getElementById("drink_kind_tab");
 const drinkThemeTab = document.getElementById("theme_tab");
@@ -8,22 +9,10 @@ const dt2Content = document.querySelector(".dt2_content");
 const categoryList = document.querySelector(".categoryList");
 const themeList = document.querySelector(".themeList");
 
-let clicked = 0;
 const handleClick = () => {
-  if (clicked) {
-    drinkKindButtonImage.src =
-      "https://image.istarbucks.co.kr/common/img/menu/list_up_btn.png";
-    drink_kind_check_view.style.display = "block";
-    drinkKindButtonImage.setAttribute("alt", "분류보기 메뉴 접기");
-    clicked = 0;
-  } else {
-    drinkKindButtonImage.src =
-      "https://image.istarbucks.co.kr/common/img/menu/list_down_btn.png";
-    drink_kind_check_view.style.display = "none";
-    drinkKindButtonImage.setAttribute("alt", "분류보기 메뉴 펼치기");
-
-    clicked = 1;
-  }
+  drink_kind_check_view.classList.toggle("active");
+  icon.classList.toggle("fa-chevron-up");
+  icon.classList.toggle("fa-chevron-down");
 };
 
 document
