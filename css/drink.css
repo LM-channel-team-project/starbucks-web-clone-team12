@@ -102,6 +102,12 @@
 }
 
 /* 분류보기 부분*/
+.titleAndButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 .drink_kind .title {
   font-size: 18px;
   font-weight: bold;
@@ -112,14 +118,28 @@
   position: absolute;
   right: 30px;
   top: 17px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 40px;
+  color: #0e0e0e;
+  background-color: #f4f4f0;
 }
-.drink_kind_btn img {
+.drink_kind_btn i {
+  position: absolute;
+  right: 12px;
+  top: 11px;
   vertical-align: top;
 }
+
 .drink_kind #drink_kind_check {
   border-top: 1px solid #ddd;
   padding: 30px 0;
   position: relative;
+}
+#drink_kind_check.active {
+  display: none;
 }
 .drink_kind_tabs dd {
   padding-top: 55px;
