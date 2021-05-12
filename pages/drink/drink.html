@@ -10,6 +10,10 @@
       href="https://image.istarbucks.co.kr/common/img/common/favicon.ico?v=200828"
       type="image/ico"
     />
+    <script
+      src="https://kit.fontawesome.com/7a4cfa35a1.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Drink | Starbucks Coffee Korea</title>
   </head>
   <body>
@@ -59,13 +63,10 @@
       </div>
       <div class="content">
         <div class="drink_kind">
-          <p class="title">분류 보기</p>
-          <div class="drink_kind_btn">
-            <a href="#" role="button">
-              <img
-                src="https://image.istarbucks.co.kr/common/img/menu/list_up_btn.png"
-                id="kind_btn"
-              />
+          <div class="titleAndButton">
+            <p class="title">분류 보기</p>
+            <a href="#" class="drink_kind_btn">
+              <i class="fas fa-chevron-down"></i>
             </a>
           </div>
           <div id="drink_kind_check">
@@ -79,7 +80,12 @@
                     <fieldset>
                       <legend class="hid">음료 카테고리 별 분류 보기</legend>
                       <ul
-                        class="cate_list mCustomScrollbar _mCS_1 mCS_no_scrollbar"
+                        class="
+                          cate_list
+                          mCustomScrollbar
+                          _mCS_1
+                          mCS_no_scrollbar
+                        "
                       >
                         <div id="mCSB_1">
                           <div id="mCSB_1_container">
