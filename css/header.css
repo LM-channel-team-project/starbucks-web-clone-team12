@@ -11,8 +11,6 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 button {
@@ -36,7 +34,7 @@ header {
   height: 75px;
 }
 
-nav {
+header nav {
   width: 80%;
   margin: auto;
   display: flex;

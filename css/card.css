@@ -1,52 +1,13 @@
 @import "reset.css";
-
+@import url('header.css');
 
 .wrapper {
     width: 100%;
 }
-.header-layout {
-    height: 120px;
-    background-color: #f6f5ef;
-    border-top: 2px solid #000;
-    border-bottom: 1px solid #e5e5e5;
-    z-index: 99;
-}
 .contents-layout {
     max-width: 1100px;
     margin: 0 auto;
-    /*border: 1px solid #000; */
-}
-.flex {
-    display: flex;
-    justify-content: space-between;
-}
-.logo {
-    background: url("https://www.starbucks.co.kr/common/img/common/logo.png");
-    width: 75px;
-    height: 75px;
-    margin-top: 22px;
-}
-.logo a {
-    display: block;
-    width: 75px;
-    height: 75px;
-}
-.gnb ul {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 45px;
-}
-.gnb ul li {
-    width: auto;
-    height: 20px;
-    padding: 15px 35px 40px 35px;
-    font-size: 18px;
-    text-align: center;
-}
-.gnb ul li:hover {
-    background-color: #2C2A29;
-    text-decoration: underline;
-    color: rgb(107, 153, 67);
+    /* border: 1px solid #000; */
 }
 .title {
     height: 20px;
