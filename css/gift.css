@@ -216,59 +216,27 @@ nav {
   align-items: center;
 }
 
-.search__checkbox li {
-  margin-right: 20px;
-  padding: 5px;
+.search__checkbox button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-label {
-  user-select: none;
-  font-size: 16px;
-}
-
-[type="checkbox"] {
-  display: none;
-}
-
-[type="checkbox"] + label {
-  position: relative;
-  padding-left: 20px;
-  cursor: pointer;
-  display: inline-block;
-  line-height: 16px;
-}
-
-[type="checkbox"] + label::before {
-  content:"";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 10px;
-  height: 10px;
-  outline: 1px solid #ccc;
-  background: #fff;
-}
-
-[type="checkbox"]:checked + label::before {
-  content:"";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 10px;
-  height: 10px;
-  outline: 1px solid #006533;
-  background: #fff;
-}
-
-[type="checkbox"]:checked + label::before {
-  content:"";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 10px;
-  height: 10px;
+.search__checkbox button:focus div{
   background-image: url(../images/gift/check.png);
   background-size: contain;
+}
+
+.search__checkbox div {
+  height: 10px;
+  width: 10px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.search__checkbox span {
+  font-size: 15px;
+  margin-right: 20px;
 }
 
 .search__theme {

@@ -3,10 +3,10 @@
 // checkbox filtering
 
 const checkboxBtnContainer = document.querySelector('.search__checkbox');
-const itemsContainer = document.querySelector('.items_container');
 const items = document.querySelectorAll('.items__category');
 
 checkboxBtnContainer.addEventListener('click', (e) => {
+  console.log(e.target.parentNode)
   const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
   if (filter == null) {
     return;
@@ -21,16 +21,17 @@ checkboxBtnContainer.addEventListener('click', (e) => {
   });
 });
 
+
 // toggle searchBtn
 
 const upBtn = document.querySelector('.search__upBtn');
 const searchContainer = document.querySelector('.searchBtn');
-const i = document.querySelector('.fa-chevron-down')
+const icon = document.querySelector('.fa-chevron-down')
 
 upBtn.addEventListener('click', () => {
   searchContainer.classList.toggle('active');
-  i.classList.toggle('fa-chevron-up');
-  i.classList.toggle('fa-chevron-down');
+  icon.classList.toggle('fa-chevron-up');
+  icon.classList.toggle('fa-chevron-down');
   const addMargin = document.querySelector('.search__titleAndMorebtn');
   addMargin.classList.toggle('open');
 });
@@ -50,7 +51,7 @@ themeBtn.addEventListener('click', () => {
 categoryBtn.addEventListener('click', () => {
   categoryBtn.classList.add('active');
   themeBtn.classList.remove('active');
-  document.querySelector('.search__checkbox').style.display = 'flex';
+  checkboxBtnContainer.style.display = 'flex';
   document.querySelector('.search__theme').style.display = 'none';
 });
 

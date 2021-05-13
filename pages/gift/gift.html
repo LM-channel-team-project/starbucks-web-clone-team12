@@ -63,48 +63,40 @@
           <button class="category active">카테고리</button>
           <button class="theme">테마</button>
         </div>
-        <ul class="search__checkbox">
-          <li class="checked" data-filter="*">
-            <input type="checkbox" id="all">
-            <label for="all">전체 상품보기</label>
-          </li>
-          <li data-filter="mug">
-            <input type="checkbox" id="mug">
-            <label for="mug">머그</label>
-          </li>
-          <li data-filter="glass">
-            <input type="checkbox" id="glass">
-            <label for="glass">글라스</label>
-          </li>
-          <li data-filter="plastic">
-            <input type="checkbox" id="plastic">
-            <label for="plastic">플라스틱 텀블러</label>
-          </li>
-          <li data-filter="stainless">
-            <input type="checkbox" id="stainless">
-            <label for="stainless">스테인리스 텀블러</label>
-          </li>
-          <li data-filter="thermos">
-            <input type="checkbox" id="thermos">
-            <label for="thermos">보온병</label>
-          </li>
-          <li data-filter="accessories">
-            <input type="checkbox" id="accessories">
-            <label for="accessories">엑세서리</label>
-          </li>
-          <li data-filter="coffee_items">
-            <input type="checkbox" id="coffee_items">
-            <label for="coffee_items">커피 용품</label>
-          </li>
-          <li data-filter="tea">
-            <input type="checkbox" id="tea">
-            <label for="tea">패키지 티(티바나)</label>
-          </li>
-          <li data-filter="planner">
-            <input type="checkbox" id="planner">
-            <label for="planner">스타벅스 플래너</label>
-          </li>
-        </ul>
+        <div class="search__checkbox">
+          <button data-filter="*">
+            <div class="checked"></div>
+            <span>전체 상품보기</span>
+          </button>
+          <button data-filter="mug">
+            <div></div>
+            <span>머그</span>
+          </button>
+          <button data-filter="glass">
+            <div></div>
+            <span>글라스</span>
+          </button>
+          <button data-filter="plastic">
+            <div></div>
+            <span>플라스틱 텀블러</span>
+          </button>
+          <button data-filter="stainless">
+            <div></div>
+            <span>스테인리스 텀블러</span>
+          </button>
+          <button data-filter="thermos">
+            <div></div>
+            <span>보온병</span>
+          </button>
+          <button data-filter="accessories">
+            <div></div>
+            <span>엑세서리</span>
+          </button>
+          <button data-filter="tea">
+            <div></div>
+            <span>패키지 티(티바나)</span>
+          </button>
+        </div>
         <div class="search__theme">
           <img src="../../images/gift/theme.img/theme1.jpg" alt="">
           <img src="../../images/gift/theme.img/theme2.jpg" alt="">
@@ -117,7 +109,7 @@
 
   <!-- Item section -->
   <section class="items">
-    <div class="items__category"　data-type="mug">
+    <div class="items__category" data-type="mug">
       <h2 class="items__category-name">머그</h2>
       <ul class="item">
         <li class="item__info">
@@ -323,7 +315,7 @@
         </li>
       </ul>
     </div>
-    <div class="items__category"　data-type="glass">
+    <div class="items__category" data-type="glass">
       <h2 class="items__category-name">글라스</h2>
       <ul class="item">
         <li class="item__info">
@@ -954,9 +946,6 @@
           <span class="item__info-name">티바나 제주녹차(15개입)</span>
         </li>
       </ul>
-    </div>
-    <div class="items__category" data-type="planner">
-      <h2 class="items__category-name">스타벅스 플래너</h2>
     </div>
   </section>
 
