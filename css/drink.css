@@ -1,17 +1,9 @@
 @import "reset.css";
 @import "footer.css";
 @import url("header.css");
-/* * {
-  box-sizing: border-box;
-} */
-.container {
-  width: 100%;
-}
-
 
 /* sub 부분 */
-.container .sub {
-  margin-top: 150px;
+.sub {
   width: 100%;
   height: 98px;
   background: #fff;
