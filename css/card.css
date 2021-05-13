@@ -5,9 +5,8 @@
     width: 100%;
 }
 .contents-layout {
-    max-width: 1100px;
+    max-width: 80%;
     margin: 0 auto;
-    /* border: 1px solid #000; */
 }
 .title {
     height: 20px;
