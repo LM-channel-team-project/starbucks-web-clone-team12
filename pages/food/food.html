@@ -6,13 +6,20 @@
     <link rel="stylesheet" href="../../css/food.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food | Starbucks Coffee Korea</title>
-    <script src="https://kit.fontawesome.com/7a4cfa35a1.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7a4cfa35a1.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <nav>
         <a href="../../index.html">
-          <img class="logo" src="https://www.starbucks.co.kr/common/img/common/logo.png" alt="logo image">
+          <img
+            class="logo"
+            src="https://www.starbucks.co.kr/common/img/common/logo.png"
+            alt="logo image"
+          />
         </a>
         <div class="menus">
           <ul class="menus__sub-menu">
@@ -35,6 +42,165 @@
         </div>
       </nav>
     </header>
+    <main>
+      <div class="sub">
+        <div class="sub-inner">
+          <h2 id="title">Food</h2>
+          <ul class="maps">
+            <li>
+              <a href="../../index.html"
+                ><img
+                  src="https://image.istarbucks.co.kr/common/img/common/icon_home.png"
+                  alt="home"
+              /></a>
+            </li>
+            <li>
+              <img
+                src="https://image.istarbucks.co.kr/common/img/common/icon_arrow.png"
+                alt="icon_arrow"
+              />
+            </li>
+            <li>
+              <a href="./food.html" class="map-food">food</a>
+            </li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="food_kind">
+          <div class="titleAndButton">
+            <p class="title">분류 보기</p>
+            <a href="#" class="food_kind_btn">
+              <i class="fas fa-chevron-down"></i>
+            </a>
+          </div>
+          <div id="food_kind_check">
+            <dl class="food_kind_tabs">
+              <dt class="dt1">
+                <a href="#" id="food_kind_tab" class="selected">카테고리</a>
+              </dt>
+              <dd class="dt1_content">
+                <div class="product_select_wrap">
+                  <form method="post">
+                    <fieldset>
+                      <legend class="hid">음료 카테고리 별 분류 보기</legend>
+                      <ul
+                        class="
+                          cate_list
+                          mCustomScrollbar
+                          _mCS_1
+                          mCS_no_scrollbar
+                        "
+                      >
+                        <div id="mCSB_1">
+                          <div id="mCSB_1_container">
+                            <li>
+                              <input
+                                type="checkbox"
+                                name="product"
+                                data-key="category"
+                                data-value="all"
+                                id="all"
+                                checked
+                              />
+                              <label for="all">전체 상품보기</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                name="product"
+                                id="bakery"
+                                data-key="category"
+                                data-value="coldBrew"
+                              />
+                              <label for="bakery">브레드</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                name="product"
+                                id="cake"
+                                data-value="brood"
+                                data-key="category"
+                              />
+                              <label for="cake">케이크</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                data-key="category"
+                                data-value="espresso"
+                                name="product"
+                                id="sandwich"
+                              />
+                              <label for="sandwich">샌드위치 & 샐러드</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                data-key="category"
+                                data-value="frappuccino"
+                                name="product"
+                                id="warm_food"
+                              />
+                              <label for="warm_food">따뜻한 푸드</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                data-key="category"
+                                data-value="blended"
+                                name="product"
+                                id="fruit_yogurt"
+                              />
+                              <label for="fruit_yogurt">과일 & 요거트</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                data-key="category"
+                                data-value="fizzo"
+                                name="product"
+                                id="snack"
+                              />
+                              <label for="snack">스낵 & 미니 디저트</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                data-key="category"
+                                data-value="tea"
+                                name="product"
+                                id="ice_cream"
+                              />
+                              <label for="ice_cream">아이스크림</label>
+                            </li>
+                          </div>
+                        </div>
+                      </ul>
+                    </fieldset>
+                  </form>
+                </div>
+              </dd>
+              <dt class="dt2"><a href="#" id="theme_tab">테마</a></dt>
+              <dd class="dt2_content">
+                <ul class="service_bn">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="https://image.istarbucks.co.kr/upload/banner/themebnr/82p8KL_20210412162303607.jpg"
+                        alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer id="footer">
       <div class="footer_wrap">
         <div class="footer_menus">
@@ -147,5 +313,6 @@
         >
       </div>
     </footer>
+    <script src="../../js/food/food.js" defer></script>
   </body>
 </html>
