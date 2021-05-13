@@ -1,0 +1,100 @@
+:root {
+  /* color */
+  --green: #006633;
+  --yellow-green: #639202;
+  --black: #3f4141;
+  --light-black: #2C2A29;
+  --cleam: #F6F5EF;
+  --gray: #7D7D7D;
+  --light-gray: #f4f4f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+header {
+  background-color: var(--cleam);
+  position: sticky;
+  top:0;
+  left: 0;
+  z-index: 2;
+  padding-top: 20px;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+}
+
+header nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menus {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+}
+
+.menus__sub-menu,
+.menus__main-manu {
+  display: flex;
+}
+
+.menus__sub-menu {
+  font-size: 12px;
+  margin: 0 50px 20px;
+  cursor: pointer;
+}
+
+.menus__sub-menu li {
+  color: var(--black);
+}
+
+.menus__sub-menu li:hover {
+  text-decoration: underline;
+}
+
+.menus__sub-menu button {
+  background-color: #fff;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+  top: -4px;
+}
+
+.menus__sub-menu li,
+.menus__sub-menu button {
+  padding: 5px 10px;
+  margin: 0 10px;
+}
+
+.menus__main-manu li{
+  padding-bottom: 25px;
+  margin: 0 8px;
+}
+
+.menus__main-manu li a {
+  color: var(--black);
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 20px 20px 29px;
+}
+
+.menus__main-manu li a:hover {
+  text-decoration: underline;
+  color: var(--yellow-green);
+  background-color: var(--light-black);
+}
