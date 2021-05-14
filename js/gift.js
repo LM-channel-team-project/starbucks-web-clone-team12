@@ -55,9 +55,15 @@ categoryBtn.addEventListener('click', () => {
   document.querySelector('.search__theme').style.display = 'none';
 });
 
+// select box
 
+const select = document.querySelector('.dropdown-select');
+const list = document.querySelector('.dropdown-list');
 
+select.addEventListener('click', () => {
+  list.classList.toggle('show');
+});
 
-
-
-
+list.addEventListener('mouseleave', () => {
+  list.classList.remove('show');
+});

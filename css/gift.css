@@ -104,6 +104,7 @@ nav {
 .header {
   width: 80%;
   margin: auto;
+  user-select: none;
 }
 
 .header__container {
@@ -136,6 +137,7 @@ nav {
 .search {
   width: 80%;
   margin: 16px auto 50px;
+  user-select: none;
 }
 
 .search__container {
@@ -252,12 +254,87 @@ nav {
   margin: 8px;
 }
 
+/* select box */
+
+.dropdown {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.dropdown-select {
+  width: 230px;
+  font-size: 15px;
+  margin: 0 0 0 auto;
+  padding: 13px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dropdown-select i {
+  color: var(--gray);
+}
+
+.dropdown-list {
+  width: 230px;
+  margin: 0 0 0 auto;
+  padding: 13px;
+  position: absolute;
+  bottom: -70px;
+  right: 0px;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 3px 3px;
+  background-color: #fff;
+  user-select: none;
+  display: none;
+}
+
+.dropdown-list.show {
+  display: block;
+}
+
+.dropdown-list button {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-list button:focus .checkbox {
+  background-image: url(../images/gift/check.png);
+  background-size: contain;
+}
+
+.dropdown-list button:first-child {
+  padding-bottom: 8px;
+}
+
+.dropdown-list .checkbox {
+  height: 9px;
+  width: 9px;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+}
+
+.dropdown-list img {
+  height: 20px;
+  width: 20px;
+}
+
+.dropdown-list span {
+  font-size: 14px;
+}
+
 /* Item section */
 
 .items {
   width: 80%;
   margin: auto;
   margin-bottom: 20px;
+  user-select: none;
 }
 
 .items__category.invisible {
