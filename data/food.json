@@ -1,0 +1,20 @@
+{
+  "bakery": [
+    {
+      "id": 1,
+      "title": "리얼 블루베리 베이글",
+      "img": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9300000003334]_20210310092057351.jpg"
+    },
+    {
+      "id": 2,
+      "title": "리얼 치즈 베이글",
+      "img": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9300000003335]_20210310092146175.jpg"
+    }
+  ],
+  "cake": [],
+  "sandwich": [],
+  "warm_food": [],
+  "fruit_yogurt": [],
+  "snack": [],
+  "ice_cream": []
+}
