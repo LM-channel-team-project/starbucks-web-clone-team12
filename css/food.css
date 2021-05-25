@@ -213,3 +213,43 @@
 .content .themeList {
   display: none;
 }
+.categoryList .category_title {
+  padding: 20px;
+  background: #f4f4f2;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+}
+.item_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 10px;
+  column-gap: 23px;
+}
+.item_container {
+  text-align: center;
+}
+.item_container .item_content {
+  height: 280px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.item_thumbnail {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.item_thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.item_description {
+  font-size: 14px;
+  color: #444;
+  height: 54px;
+  line-height: 54px;
+}
