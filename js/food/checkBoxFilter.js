@@ -23,6 +23,7 @@ document
   .querySelector("#ice_cream")
   .addEventListener("click", (event) => loadItems(event));
 
+const container = document.querySelector(".list");
 const loadItems = async (event) =>
   await fetch("../../data/food.json")
     .then((response) => response.json())
@@ -32,14 +33,18 @@ const loadItems = async (event) =>
           Object.keys(json)[i] === event.target.id ? items(event) : false;
         }
       } else {
-        allDisplay(json);
+        if (event.target.checked) {
+          container.style.display = "block";
+          allDisplay(json);
+        } else {
+          container.style.display = "none";
+        }
       }
     });
 
 const allDisplay = (items) => {
   console.log(items);
   const title = Object.keys(items);
-  const container = document.querySelector(".list");
   container.innerHTML = title
     .map((sub) => createHTMLString(sub, items))
     .join(" ");
