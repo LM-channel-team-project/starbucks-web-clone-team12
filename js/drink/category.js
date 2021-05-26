@@ -1,4 +1,14 @@
-const documents = (items) => {
+const loadItems = async () =>
+  await fetch("../../data/drink.json")
+    .then((response) => response.json())
+    .then((json) => json);
+
+loadItems().then((data) => {
+  allDisplay(data);
+  documents(data);
+});
+
+const documents = (json) => {
   const checkType = [
     "all",
     "coldBrew",
@@ -15,23 +25,14 @@ const documents = (items) => {
     document
       .getElementById(`${checkType[count]}`)
       .addEventListener("click", (event) => {
-        Items(items, event);
+        Filter(json, event);
       });
   }
 };
 
 const container = document.querySelector(".list");
-const loadItems = async () =>
-  await fetch("../../data/drink.json")
-    .then((response) => response.json())
-    .then((json) => json);
 
-loadItems().then((items) => {
-  allDisplay(items);
-  documents(items);
-});
-
-const Items = async (json, event) => {
+const Filter = (json, event) => {
   if (event.target.id !== "all") {
     if (event.target.checked) {
       for (let i = 0; i <= Object.keys(json).length; i++) {
