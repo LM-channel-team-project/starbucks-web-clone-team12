@@ -180,9 +180,12 @@
 .service_bn {
   width: 1053px;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   left: -8px;
   top: -5px;
 }
+
 .service_bn li {
   /* float: left; */
   margin: 5px 8px;
@@ -207,6 +210,8 @@
   vertical-align: top;
   max-width: 100%;
   border-radius: 7px;
+}
+.service_bn li a .themeSelected {
   border: 2px solid #006633;
 }
 
