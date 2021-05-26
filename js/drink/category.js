@@ -1,4 +1,4 @@
-const init = () => {
+const documents = (items) => {
   const checkType = [
     "all",
     "coldBrew",
@@ -15,43 +15,48 @@ const init = () => {
     document
       .getElementById(`${checkType[count]}`)
       .addEventListener("click", (event) => {
-        loadItems(event);
+        Items(items, event);
       });
   }
 };
 
 const container = document.querySelector(".list");
-const loadItems = async (event) =>
+const loadItems = async () =>
   await fetch("../../data/drink.json")
     .then((response) => response.json())
-    .then((json) => {
-      if (event.target.id !== "all") {
-        if (event.target.checked) {
-          for (let i = 0; i <= Object.keys(json).length; i++) {
-            Object.keys(json)[i] === event.target.id
-              ? Display(event, json)
-              : false;
-          }
-          container.style.display = "block";
-        } else {
-          container.style.display = "none";
-        }
-      } else {
-        if (event.target.checked) {
-          container.style.display = "block";
-          allDisplay(json);
-        } else {
-          container.style.display = "none";
-        }
+    .then((json) => json);
+
+loadItems().then((items) => {
+  allDisplay(items);
+  documents(items);
+});
+
+const Items = async (json, event) => {
+  if (event.target.id !== "all") {
+    if (event.target.checked) {
+      for (let i = 0; i <= Object.keys(json).length; i++) {
+        Object.keys(json)[i] === event.target.id ? Display(event, json) : false;
       }
-      const obj = document.getElementsByName("product");
-      const a = event.target;
-      for (let i = 0; i < obj.length; i++) {
-        if (obj[i] != a) {
-          obj[i].checked = false;
-        }
-      }
-    });
+      container.style.display = "block";
+    } else {
+      container.style.display = "none";
+    }
+  } else {
+    if (event.target.checked) {
+      container.style.display = "block";
+      allDisplay(json);
+    } else {
+      container.style.display = "none";
+    }
+  }
+  const obj = document.getElementsByName("product");
+  const a = event.target;
+  for (let i = 0; i < obj.length; i++) {
+    if (obj[i] != a) {
+      obj[i].checked = false;
+    }
+  }
+};
 
 const allDisplay = (items) => {
   const title = Object.keys(items);
@@ -117,4 +122,3 @@ const CreateItemHTML = (title, lists) => {
         </div>
         `;
 };
-init();
