@@ -216,13 +216,7 @@
 
 /* itemList */
 
-.categoryList {
-  margin-bottom: 40px;
-  width: 1100px;
-}
-
 .categoryList .category_title {
-  display: none;
   padding: 20px;
   background: #f4f4f2;
   margin-bottom: 20px;
@@ -233,11 +227,15 @@
   color: #222;
 }
 .list {
+  display: block;
+}
+.item_list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 10px;
   column-gap: 23px;
 }
+
 .item_container {
   text-align: center;
 }
@@ -261,8 +259,4 @@
   color: #444;
   height: 54px;
   line-height: 54px;
-}
-.themeList {
-  margin-bottom: 40px;
-  width: 1100px;
 }

@@ -107,8 +107,6 @@
                               <input
                                 type="checkbox"
                                 name="product"
-                                data-key="category"
-                                data-value="all"
                                 id="all"
                                 checked
                               />
@@ -119,8 +117,6 @@
                                 type="checkbox"
                                 name="product"
                                 id="coldBrew"
-                                data-key="category"
-                                data-value="coldBrew"
                               />
                               <label for="coldBrew">콜드 브루 커피</label>
                             </li>
@@ -129,16 +125,12 @@
                                 type="checkbox"
                                 name="product"
                                 id="brood"
-                                data-value="brood"
-                                data-key="category"
                               />
                               <label for="brood">브루드 커피</label>
                             </li>
                             <li>
                               <input
                                 type="checkbox"
-                                data-key="category"
-                                data-value="espresso"
                                 name="product"
                                 id="espresso"
                               />
@@ -147,8 +139,6 @@
                             <li>
                               <input
                                 type="checkbox"
-                                data-key="category"
-                                data-value="frappuccino"
                                 name="product"
                                 id="frappuccino"
                               />
@@ -157,8 +147,6 @@
                             <li>
                               <input
                                 type="checkbox"
-                                data-key="category"
-                                data-value="blended"
                                 name="product"
                                 id="blended"
                               />
@@ -167,38 +155,22 @@
                             <li>
                               <input
                                 type="checkbox"
-                                data-key="category"
-                                data-value="fizzo"
                                 name="product"
                                 id="fizzo"
                               />
                               <label for="fizzo">스타벅스 피지오</label>
                             </li>
                             <li>
-                              <input
-                                type="checkbox"
-                                data-key="category"
-                                data-value="tea"
-                                name="product"
-                                id="tea"
-                              />
+                              <input type="checkbox" name="product" id="tea" />
                               <label for="tea">티 (티바나)</label>
                             </li>
                             <li>
-                              <input
-                                type="checkbox"
-                                data-key="category"
-                                data-value="etc"
-                                name="product"
-                                id="etc"
-                              />
+                              <input type="checkbox" name="product" id="etc" />
                               <label for="etc">기타 제조 음료</label>
                             </li>
                             <li>
                               <input
                                 type="checkbox"
-                                data-key="category"
-                                data-value="juice"
                                 name="product"
                                 id="juice"
                               />
@@ -228,49 +200,50 @@
         </div>
         <!-- 카테고리 리스트 -->
         <div class="categoryList" id="category">
-          <div class="category_title"></div>
           <ul class="list"></ul>
         </div>
         <div class="themeList">
           <ul class="list">
-            <li class="item">
-              <div class="item_container">
-                <div class="item_content">
-                  <img
-                    src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000003431]_20210401092933664.jpg"
-                    alt="포레스트 콜드 브루"
-                    class="item_thumbnail"
-                  />
+            <div class="item_list">
+              <li class="item">
+                <div class="item_container">
+                  <div class="item_content">
+                    <img
+                      src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000003431]_20210401092933664.jpg"
+                      alt="포레스트 콜드 브루"
+                      class="item_thumbnail"
+                    />
+                  </div>
+                  <span class="item_description">포레스트 콜드 브루</span>
                 </div>
-                <span class="item_description">포레스트 콜드 브루</span>
-              </div>
-            </li>
-            <li class="item">
-              <div class="item_container">
-                <div class="item_content">
-                  <img
-                    src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000003434]_20210401093043581.jpg"
-                    alt="바나나 크림 다크 초코 블렌디드"
-                    class="item_thumbnail"
-                  />
+              </li>
+              <li class="item">
+                <div class="item_container">
+                  <div class="item_content">
+                    <img
+                      src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000003434]_20210401093043581.jpg"
+                      alt="바나나 크림 다크 초코 블렌디드"
+                      class="item_thumbnail"
+                    />
+                  </div>
+                  <span class="item_description"
+                    >바나나 크림 다크 초코 블렌디드</span
+                  >
                 </div>
-                <span class="item_description"
-                  >바나나 크림 다크 초코 블렌디드</span
-                >
-              </div>
-            </li>
-            <li class="item">
-              <div class="item_container">
-                <div class="item_content">
-                  <img
-                    src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000003437]_20210401093131824.jpg"
-                    alt="샤이닝 머스캣 에이드"
-                    class="item_thumbnail"
-                  />
+              </li>
+              <li class="item">
+                <div class="item_container">
+                  <div class="item_content">
+                    <img
+                      src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000003437]_20210401093131824.jpg"
+                      alt="샤이닝 머스캣 에이드"
+                      class="item_thumbnail"
+                    />
+                  </div>
+                  <span class="item_description">샤이닝 머스캣 에이드</span>
                 </div>
-                <span class="item_description">샤이닝 머스캣 에이드</span>
-              </div>
-            </li>
+              </li>
+            </div>
           </ul>
         </div>
       </div>
@@ -389,6 +362,6 @@
       </footer>
     </div>
     <script src="../../js/drink/menu.js" defer></script>
-    <script src="../../js/drink/checkBoxFilter.js" defer></script>
+    <script src="../../js/drink/category.js" defer></script>
   </body>
 </html>
