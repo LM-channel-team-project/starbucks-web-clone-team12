@@ -11,13 +11,13 @@ loadItems().then((data) => {
 const documents = (json) => {
   const checkType = [
     "all",
-    "Bred",
-    "Cake",
-    "Sandwich",
-    "WarmFood",
-    "fruitYogurt",
-    "Snack",
-    "IceCream",
+    "브레드",
+    "케이크",
+    "샌드위치 & 샐러드",
+    "따뜻한 푸드",
+    "과일 & 요거트",
+    "스낵 & 미니 디저트",
+    "아이스크림",
   ];
   for (let count = 0; count < checkType.length; count++) {
     document

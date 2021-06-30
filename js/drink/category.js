@@ -11,15 +11,15 @@ loadItems().then((data) => {
 const documents = (json) => {
   const checkType = [
     "all",
-    "coldBrew",
-    "brood",
-    "espresso",
-    "frappuccino",
-    "blended",
-    "fizzo",
-    "tea",
-    "etc",
-    "juice",
+    "콜드 브루 커피",
+    "브루드 커피",
+    "에스프레소",
+    "프라푸치노",
+    "블렌디드",
+    "스타벅스 피지오",
+    "티 (티바나)",
+    "기타 제조 음료",
+    "스타벅스 주스(병음료)",
   ];
   for (let count = 0; count < checkType.length; count++) {
     document

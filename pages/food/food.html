@@ -79,7 +79,7 @@
           <div id="food_kind_check">
             <dl class="food_kind_tabs">
               <dt class="dt1">
-                <a href="#" id="food_kind_tab" class="selected">카테고리</a>
+                <button id="food_kind_tab" class="selected">카테고리</button>
               </dt>
               <dd class="dt1_content">
                 <div class="product_select_wrap">
@@ -106,48 +106,56 @@
                               <label for="all">전체 상품보기</label>
                             </li>
                             <li>
-                              <input type="checkbox" name="food" id="Bred" />
-                              <label for="Bred">브레드</label>
+                              <input type="checkbox" name="food" id="브레드" />
+                              <label for="브레드">브레드</label>
                             </li>
                             <li>
-                              <input type="checkbox" name="food" id="Cake" />
-                              <label for="Cake">케이크</label>
-                            </li>
-                            <li>
-                              <input
-                                type="checkbox"
-                                name="food"
-                                id="Sandwich"
-                              />
-                              <label for="Sandwich">샌드위치 & 샐러드</label>
+                              <input type="checkbox" name="food" id="케이크" />
+                              <label for="케이크">케이크</label>
                             </li>
                             <li>
                               <input
                                 type="checkbox"
                                 name="food"
-                                id="WarmFood"
+                                id="샌드위치 & 샐러드"
                               />
-                              <label for="WarmFood">따뜻한 푸드</label>
+                              <label for="샌드위치 & 샐러드"
+                                >샌드위치 & 샐러드</label
+                              >
                             </li>
                             <li>
                               <input
                                 type="checkbox"
                                 name="food"
-                                id="fruitYogurt"
+                                id="따뜻한 푸드"
                               />
-                              <label for="fruitYogurt">과일 & 요거트</label>
-                            </li>
-                            <li>
-                              <input type="checkbox" name="food" id="Snack" />
-                              <label for="Snack">스낵 & 미니 디저트</label>
+                              <label for="따뜻한 푸드">따뜻한 푸드</label>
                             </li>
                             <li>
                               <input
                                 type="checkbox"
                                 name="food"
-                                id="IceCream"
+                                id="과일 & 요거트"
                               />
-                              <label for="IceCream">아이스크림</label>
+                              <label for="과일 & 요거트">과일 & 요거트</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                name="food"
+                                id="스낵 & 미니 디저트"
+                              />
+                              <label for="스낵 & 미니 디저트"
+                                >스낵 & 미니 디저트</label
+                              >
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                name="food"
+                                id="아이스크림"
+                              />
+                              <label for="아이스크림">아이스크림</label>
                             </li>
                           </div>
                         </div>
@@ -156,48 +164,53 @@
                   </form>
                 </div>
               </dd>
-              <dt class="dt2"><a href="#" id="theme_tab">테마</a></dt>
+              <dt class="dt2"><button id="theme_tab">테마</button></dt>
               <dd class="dt2_content">
                 <ul class="service_bn">
                   <li>
-                    <a href="#"
-                      ><img
+                    <button>
+                      <img
                         class="onesun"
                         src="https://image.istarbucks.co.kr/upload/banner/themebnr/82p8KL_20210412162412216.jpg"
                         alt=""
-                    /></a>
+                      />
+                    </button>
                   </li>
                   <li>
-                    <a href="#"
-                      ><img
+                    <button>
+                      <img
                         class="brunch"
                         src="https://image.istarbucks.co.kr/upload/banner/themebnr/bnr_brunch_menu.jpg"
                         alt=""
-                    /></a>
+                      />
+                    </button>
                   </li>
                   <li>
-                    <a href="#"
-                      ><img
+                    <button>
+                      <img
                         class="everland"
                         src="https://image.istarbucks.co.kr/upload/banner/themebnr/everland_r.jpg"
                         alt=""
-                    /></a>
+                      />
+                    </button>
                   </li>
                   <li>
-                    <a href="#"
-                      ><img
+                    <button>
+                      <img
                         class="wholeCake"
                         src="https://image.istarbucks.co.kr/upload/banner/themebnr/bnr_wholecake_190425.jpg"
                         alt=""
-                    /></a>
+                      />
+                    </button>
                   </li>
                   <li>
-                    <a href="#"
-                      ><img
+                    <button>
+                      <img
                         class="jeju"
                         src="https://image.istarbucks.co.kr/upload/banner/themebnr/200731_jeju.jpg"
                         alt=""
-                    /></a>
+                      />
+                    </button>
                   </li>
                 </ul>
               </dd>
@@ -207,7 +220,9 @@
         <div class="categoryList" id="category">
           <ul class="list"></ul>
         </div>
-        <div class="themeList"></div>
+        <div class="themeLists">
+          <ul class="themelist"></ul>
+        </div>
       </div>
     </main>
     <footer id="footer">
@@ -324,6 +339,6 @@
     </footer>
     <script src="../../js/food/food.js" defer></script>
     <script src="../../js/food/category.js" defer></script>
-    <script src="/js/food/theme.js" defer></script>
+    <script src="../../js/food/theme.js" defer></script>
   </body>
 </html>
