@@ -1,5 +1,5 @@
 {
-  "coldBrew": [
+  "콜드 브루 커피": [
     {
       "id": 1,
       "title": "나이트로 바닐라 크림",
@@ -56,7 +56,7 @@
       "img": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000001635]_20210225092236748.jpg"
     }
   ],
-  "brood": [
+  "브루드 커피": [
     {
       "id": 12,
       "title": "아이스 커피",
@@ -68,7 +68,7 @@
       "img": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[2]_20210426092127686.jpg"
     }
   ],
-  "espresso": [
+  "에스프레소": [
     {
       "id": 14,
       "title": "제주 별다방 땅콩 라떼",
@@ -230,7 +230,7 @@
       "img": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[110614]_20210415132333109.jpg"
     }
   ],
-  "frappuccino": [
+  "프라푸치노": [
     {
       "id": 46,
       "title": "제주 별다방 땅콩 프라푸치노",
@@ -307,7 +307,7 @@
       "img": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000002403]_20210419131548656.jpg"
     }
   ],
-  "blended": [
+  "블렌디드": [
     {
       "id": 61,
       "title": "제주 천혜향 블랙 티 블렌디드",
@@ -339,7 +339,7 @@
       "img": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000002766]_20210419125528821.jpg"
     }
   ],
-  "fizzo": [
+  "스타벅스 피지오": [
     {
       "id": 67,
       "title": "블랙 티 레모네이드 피지오",
@@ -361,7 +361,7 @@
       "img": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000001321]_20210419125625164.jpg"
     }
   ],
-  "tea": [
+  "티 (티바나)": [
     {
       "id": 72,
       "title": "별궁 오미자 유스베리 티",
@@ -528,7 +528,7 @@
       "img": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[135608]_20210415154244810.jpg"
     }
   ],
-  "etc": [
+  "기타 제조 음료": [
     {
       "id": 105,
       "title": "샤이닝 머스캣 에이드",
@@ -600,7 +600,7 @@
       "img": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9200000003430]_20210324170218269.jpg"
     }
   ],
-  "juice": [
+  "스타벅스 주스(병음료)": [
     {
       "id": 116,
       "title": "기운내라임 190ML",
