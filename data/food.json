@@ -1,5 +1,5 @@
 {
-  "Bred": [
+  "브레드": [
     {
       "id": 1,
       "title": "리얼 블루베리 베이글",
@@ -148,7 +148,7 @@
       "img": "https://image.istarbucks.co.kr/upload/store/skuimg/2020/09/[9300000003042]_20200924141423384.jpg"
     }
   ],
-  "Cake": [
+  "케이크": [
     {
       "id": 1,
       "title": "The 촉촉 초콜릿 생크림 케이크",
@@ -344,7 +344,7 @@
       "theme": "wholeCake"
     }
   ],
-  "Sandwich": [
+  "샌드위치 & 샐러드": [
     {
       "id": 1,
       "title": "커리 치킨 샐러드 밀 박스",
@@ -499,7 +499,7 @@
       "theme": "brunch"
     }
   ],
-  "WarmFood": [
+  "따뜻한 푸드": [
     {
       "id": 1,
       "title": "트러플 머쉬룸 수프",
@@ -513,7 +513,7 @@
       "theme": "brunch"
     }
   ],
-  "fruitYogurt": [
+  "과일 & 요거트": [
     {
       "id": 1,
       "title": "사과 가득 핸디 젤리",
@@ -566,7 +566,7 @@
       "img": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9300000001855]_20210422101550295.jpg"
     }
   ],
-  "Snack": [
+  "스낵 & 미니 디저트": [
     {
       "id": 1,
       "title": "잼있는 스푼쿠키",
@@ -752,7 +752,7 @@
       "theme": "everland"
     }
   ],
-  "IceCream": [
+  "아이스크림": [
     {
       "id": 1,
       "title": "유기농 바닐라 아이스크림",
