@@ -51,19 +51,20 @@
         <!-- nav -->
         <nav class="prd-list">
             <h3>분류 보기</h3>
-            <a class="list_updown"><img src="../../images/card/list_up_btn.png" id="updownbtn" onclick="updown()"></a>
-            <div id="prd-list-innerline"></div>
-            <!-- addEventListener 변경 필요 -->
+            <img src="../../images/card/list_up_btn.png" id="toggle">
+            <div id="toggle-item">
+            <div id="prd-list-innerline"></div>    
             <a href="#" class="list1"><div class="prd-list-lnb" id="category" onclick="listClick1()">카테고리</div></a>
             <a href="#" class="list2"><div class="prd-list-lnb" id="theme" onclick="listClick2()">테마</div></a>
             <ul>
-                <li><input type="checkbox" id="all">
+                <li class="toggle-check"><input type="checkbox" id="all">
                 <label for="all">전체 상품보기</label></li>
-                <li><input type="checkbox" id="physical-card">
+                <li class="toggle-check"><input type="checkbox" id="physical-card">
                 <label for="physical-card">실물카드</label></li>
-                <li><input type="checkbox" id="e-gift-card">
+                <li class="toggle-check"><input type="checkbox" id="e-gift-card">
                 <label for="e-gift-card">e-Gift 카드</label></li>
             </ul>
+            </div>
         </nav>
         <!-- content -->
         <div class="content">
@@ -580,6 +581,6 @@
         </div>
     </footer>
     </div>
-    <script src="../../js/card.js"></script>
+    <script src="../../js/card/card.js"></script>
 </body>
 </html>
