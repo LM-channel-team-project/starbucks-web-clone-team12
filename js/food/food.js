@@ -9,7 +9,7 @@ const dt1Content = document.querySelector(".dt1_content");
 const dt2Content = document.querySelector(".dt2_content");
 
 const categoryList = document.querySelector(".categoryList");
-const themeList = document.querySelector(".themeList");
+const themeList = document.querySelector(".themeLists");
 
 food_kind_btn.addEventListener("click", () => {
   food_kind_check.classList.toggle("active");
