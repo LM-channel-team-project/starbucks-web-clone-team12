@@ -97,7 +97,7 @@
   top: 30px;
 }
 
-.dt1 a {
+.dt1 button {
   display: block;
   width: 200px;
   height: 35px;
@@ -109,7 +109,7 @@
   font-size: 14px;
   text-align: center;
 }
-.dt1 a:hover {
+.dt1 button:hover {
   text-decoration: underline;
 }
 .dt1 .selected {
@@ -152,7 +152,7 @@
   position: absolute;
   top: 30px;
 }
-.dt2 a {
+.dt2 button {
   display: block;
   width: 200px;
   height: 35px;
@@ -164,7 +164,7 @@
   text-align: center;
   font-weight: 600;
 }
-.dt2 a:hover {
+.dt2 button:hover {
   text-decoration: underline;
 }
 .dt2 .selected {
