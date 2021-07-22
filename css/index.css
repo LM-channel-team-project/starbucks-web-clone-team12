@@ -5,3 +5,11 @@
 .container {
   width: 100%;
 }
+
+.card__banner {
+  position: fixed;
+  top: 9.125em;
+  width: 8.125em;
+  right: 8.75em;
+  z-index: 999;
+}
