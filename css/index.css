@@ -5,11 +5,112 @@
 .container {
   width: 100%;
 }
-
+/* card banner Style */
 .card__banner {
   position: fixed;
   top: 9.125em;
   width: 8.125em;
   right: 8.75em;
   z-index: 999;
+}
+
+/* main__wrap Style */
+#main__wrap {
+  width: 100%;
+  height: 40.5em;
+  background-image: url(../images/index/mainwrap/main_background.jpg);
+}
+#main__wrap .wrap__container {
+  position: relative;
+  max-width: 57.8em;
+  margin: 0 auto;
+}
+.wrap__title {
+  padding-top: 3.625em;
+}
+.wrap__title .detail__btn {
+  width: 7.6em;
+  border-radius: 0.3125em;
+  border: 0.125em solid #005481;
+  padding: 0.5em 0.8em;
+  text-align: center;
+  left: 1em;
+  margin-top: 1.434em;
+  margin-left: 2.3em;
+}
+.detail__btn a {
+  color: #005481;
+  font-weight: 400;
+}
+.detail__btn a:hover {
+  text-decoration: underline;
+}
+
+.wrap__products .product {
+  position: absolute;
+}
+.wrap__products .product::after {
+  content: "";
+  position: absolute;
+}
+.wrap__product1 {
+  right: 11.25em;
+  top: 6.875em;
+}
+.wrap__product1 img {
+  position: relative;
+  z-index: 10;
+}
+
+.wrap__product1::after {
+  top: 0.9375em;
+  bottom: 0;
+  left: -12.8125em;
+  width: 12.8125em;
+  background-image: url(../images/index/mainwrap/main_blended_title.png);
+  background-repeat: no-repeat;
+}
+
+.wrap__product2 {
+  top: 17.5em;
+  right: 23.313em;
+  width: 18%;
+  max-width: 11.57em;
+}
+.wrap__product2 img {
+  position: relative;
+  z-index: 10;
+}
+.wrap__product2::after {
+  background-image: url(../images/index/mainwrap/main_coldbrew_title.png);
+  top: 7.5em;
+  bottom: 0;
+  left: -12.8125em;
+  width: 12.8125em;
+  background-repeat: no-repeat;
+}
+.wrap__product2::before {
+  content: "";
+  position: absolute;
+  top: 11em;
+  bottom: 20.2%;
+  left: -1.69em;
+  height: 50%;
+  width: 13.75em;
+  z-index: 9;
+  background-repeat: no-repeat;
+  background-image: url(../images/index/mainwrap/main_coldbrew_bg.png);
+}
+
+.wrap__product3 {
+  top: 11.25em;
+  right: -3.75em;
+}
+.wrap__product3::after {
+  top: -4.375em;
+  bottom: 0;
+  left: -2.06em;
+  width: 13.875em;
+  background-image: url(../images/index/mainwrap/main_tea_title.png);
+  background-repeat: no-repeat;
 }

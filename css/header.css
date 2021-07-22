@@ -3,9 +3,9 @@
   --green: #006633;
   --yellow-green: #639202;
   --black: #3f4141;
-  --light-black: #2C2A29;
-  --cleam: #F6F5EF;
-  --gray: #7D7D7D;
+  --light-black: #2c2a29;
+  --cleam: #f6f5ef;
+  --gray: #7d7d7d;
   --light-gray: #f4f4f2;
 }
 
@@ -23,9 +23,9 @@ button {
 header {
   background-color: var(--cleam);
   position: sticky;
-  top:0;
+  top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 99;
   padding-top: 20px;
 }
 
@@ -44,7 +44,7 @@ header nav {
 .menus {
   display: flex;
   flex-direction: column;
-  align-items:flex-end;
+  align-items: flex-end;
 }
 
 .menus__sub-menu,
@@ -81,7 +81,7 @@ header nav {
   margin: 0 10px;
 }
 
-.menus__main-manu li{
+.menus__main-manu li {
   padding-bottom: 25px;
   margin: 0 8px;
 }
