@@ -120,6 +120,7 @@
 #notice {
   height: 3.875em;
   display: flex;
+  background-color: #f6f5ef;
 }
 
 .notice__left {
@@ -148,6 +149,7 @@
 }
 
 .notice__right {
+  background-color: #f6f5ef;
   color: black;
   padding-left: 11.6em;
   display: flex;
