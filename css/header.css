@@ -90,7 +90,7 @@ header nav {
   color: var(--black);
   font-size: 13px;
   text-transform: uppercase;
-  padding: 20px 20px 29px;
+  padding: 20px 20px 24px;
 }
 
 .menus__main-manu li a:hover {
