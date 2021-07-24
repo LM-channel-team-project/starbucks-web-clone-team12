@@ -17,8 +17,9 @@
 /* main__wrap Style */
 #main__wrap {
   width: 100%;
-  height: 40.5em;
+  height: 40em;
   background-image: url(../images/index/mainwrap/main_background.jpg);
+  background-repeat: no-repeat;
 }
 #main__wrap .wrap__container {
   position: relative;
@@ -113,4 +114,111 @@
   width: 13.875em;
   background-image: url(../images/index/mainwrap/main_tea_title.png);
   background-repeat: no-repeat;
+}
+
+/* notice Style */
+#notice {
+  height: 3.875em;
+  display: flex;
+  background-color: #f6f5ef;
+}
+
+.notice__left {
+  background-color: black;
+  color: white;
+  padding-left: 16.6em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notice__left .inner__notice {
+  width: 3.75em;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+.notice__left a {
+  color: white;
+}
+.notice__left .plus__btn {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.7em;
+  margin-right: 1.3em;
+}
+
+.notice__right {
+  background-color: #f6f5ef;
+  color: black;
+  padding-left: 11.6em;
+  display: flex;
+}
+.notice__right a {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notice__right .inner__promotion {
+  width: 7.75em;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.notice__right .arrow__btn {
+  margin-left: 4.75em;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 0.7em;
+  margin-right: 1.3em;
+}
+
+/* rolling Text */
+.rolling__box {
+  width: 13.5em;
+  height: 2.5em;
+  margin-right: 17.75em;
+}
+
+.rolling__box ul {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.rolling__box ul li {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  position: absolute;
+  transition: top 0.75s;
+  top: 100%;
+  z-index: 1;
+  background-color: black;
+}
+
+.card_sliding {
+  top: 0 !important;
+  z-index: 100 !important;
+}
+
+.card_sliding_after {
+  top: -100% !important;
+  z-index: 10 !important;
+}
+
+.rolling__box ul li p {
+  font-size: 0.875em;
+  line-height: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.before_slide {
+  transform: translateY(100%);
+}
+
+.after_slide {
+  transform: translateY(0);
 }
