@@ -10,16 +10,17 @@
       href="https://image.istarbucks.co.kr/common/img/common/favicon.ico?v=200828"
       type="image/ico"
     />
+    <script src="./js/home/rollingText.js" defer></script>
+    <script src="./js/home/home.js" defer></script>
     <script src="https://kit.fontawesome.com/7a4cfa35a1.js" crossorigin="anonymous"></script>
     <title>Starbucks Coffee Korea</title>
-    
   </head>
   <body>
     <div class="container">
       <header>
         <nav>
           <a href="../../index.html">
-            <img class="logo" src="https://www.starbucks.co.kr/common/img/common/logo.png" alt="logo image">
+            <img class="logo" src="https://www.starbucks.co.kr/common/img/common/logo.png" alt="logo image" />
           </a>
           <div class="menus">
             <ul class="menus__sub-menu">
@@ -43,12 +44,59 @@
         </nav>
       </header>
       <main>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-          quibusdam, corrupti ut excepturi velit, ab facilis accusantium nobis
-          sapiente quod et aut animi vel officia praesentium, possimus itaque
-          laboriosam dolor?
-        </h1>
+        <a href="#" class="card__banner">
+          <img src="./images/index/banner.png" alt="H-card" />
+        </a>
+        <section id="main__wrap">
+          <div class="wrap__container">
+            <div class="wrap__title">
+              <img src="./images/index/mainwrap/main_title.png" alt="" />
+              <div class="detail__btn">
+                <a href="#">자세히 보기</a>
+              </div>
+            </div>
+            <div class="wrap__products">
+              <div class="product wrap__product1"><img src="./images/index/mainwrap/main_blended.png" /></div>
+              <div class="product wrap__product2"><img src="./images/index/mainwrap/main_coldbrew.png" /></div>
+              <div class="product wrap__product3"><img src="./images/index/mainwrap/main_tea.png" /></div>
+            </div>
+          </div>
+        </section>
+        <section id="notice">
+          <div class="notice__left">
+            <div class="inner__notice">
+              <p>공지사항</p>
+            </div>
+            <div class="rolling__box">
+              <ul id="rolling__box">
+                <li class="card_sliding" id="first"><p></p></li>
+                <li class="" id="second"><p></p></li>
+                <li class="" id="third"><p></p></li>
+              </ul>
+            </div>
+            <a href="#">
+              <div class="plus__btn">
+                <i class="fas fa-plus"></i>
+              </div>
+            </a>
+          </div>
+          <div class="notice__right">
+            <a href="#">
+              <div class="inner__promotion">
+                <p>스타벅스 프로모션</p>
+              </div>
+              <div class="arrow__btn">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
       </main>
       <footer id="footer">
         <div class="footer_wrap">
@@ -95,44 +143,32 @@
             <ul class="footer_award_slider">
               <li>
                 <a href="#"
-                  ><img
-                    src="https://image.istarbucks.co.kr/common/img/footer/footer_award17_01.jpg"
-                    alt=""
+                  ><img src="https://image.istarbucks.co.kr/common/img/footer/footer_award17_01.jpg" alt=""
                 /></a>
               </li>
               <li>
                 <a href="#"
-                  ><img
-                    src="https://image.istarbucks.co.kr/common/img/footer/footer_award17_02.jpg"
-                    alt=""
+                  ><img src="https://image.istarbucks.co.kr/common/img/footer/footer_award17_02.jpg" alt=""
                 /></a>
               </li>
               <li>
                 <a href="#"
-                  ><img
-                    src="https://image.istarbucks.co.kr/common/img/footer/footer_award17_03.jpg"
-                    alt=""
+                  ><img src="https://image.istarbucks.co.kr/common/img/footer/footer_award17_03.jpg" alt=""
                 /></a>
               </li>
               <li>
                 <a href="#"
-                  ><img
-                    src="https://image.istarbucks.co.kr/common/img/footer/footer_award17_04.jpg"
-                    alt=""
+                  ><img src="https://image.istarbucks.co.kr/common/img/footer/footer_award17_04.jpg" alt=""
                 /></a>
               </li>
               <li>
                 <a href="#"
-                  ><img
-                    src="https://image.istarbucks.co.kr/common/img/footer/footer_award17_05.jpg"
-                    alt=""
+                  ><img src="https://image.istarbucks.co.kr/common/img/footer/footer_award17_05.jpg" alt=""
                 /></a>
               </li>
               <li>
                 <a href="#"
-                  ><img
-                    src="https://image.istarbucks.co.kr/common/img/footer/footer_award17_06.jpg"
-                    alt=""
+                  ><img src="https://image.istarbucks.co.kr/common/img/footer/footer_award17_06.jpg" alt=""
                 /></a>
               </li>
             </ul>
@@ -157,9 +193,7 @@
             <li>TEL : 1522-3232</li>
             <li>개인정보 책임자 : 하익성</li>
           </ul>
-          <span class="copy"
-            >ⓒ 2021 Starbucks Coffee Company. All Rights Reserved.</span
-          >
+          <span class="copy">ⓒ 2021 Starbucks Coffee Company. All Rights Reserved.</span>
         </div>
       </footer>
     </div>
