@@ -126,13 +126,13 @@
 .notice__left {
   background-color: black;
   color: white;
-  padding-left: 16.6em;
+  padding-left: 18.6em;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .notice__left .inner__notice {
-  width: 3.75em;
+  width: 4em;
   font-size: 1.1em;
   font-weight: bold;
   margin-right: 1em;
@@ -161,7 +161,7 @@
   align-items: center;
 }
 .notice__right .inner__promotion {
-  width: 7.75em;
+  width: 8.75em;
   font-size: 1.1em;
   font-weight: bold;
 }
@@ -178,6 +178,7 @@
   width: 13.5em;
   height: 2.5em;
   margin-right: 17.75em;
+  margin-top: 0.25em;
 }
 
 .rolling__box ul {
@@ -331,4 +332,29 @@
 }
 .gift__btn :hover {
   text-decoration: underline;
+}
+
+#bean__wrap {
+  height: 573px;
+  background-image: url(../images/index/beanwrap/bean-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.bean__innner {
+  position: relative;
+  max-width: 1080px;
+  height: 100%;
+  margin: 0 auto;
+}
+.bean__img {
+  top: 14.3%;
+  left: 14.3%;
+  max-width: 206px;
+  width: 20%;
+}
+.bean__contents {
+  top: 33.1%;
+  right: 7.9%;
+  max-width: 408px;
+  width: 38%;
 }
