@@ -126,7 +126,7 @@
 .notice__left {
   background-color: black;
   color: white;
-  padding-left: 18.6em;
+  padding-left: 17.3em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -411,7 +411,7 @@
 
 /* reserve wrap style */
 
-#reverse__wrap {
+#reserve__wrap {
   height: 25em;
   position: relative;
   background: url(https://image.istarbucks.co.kr/upload/common/img/main/2021/reserve_sundried_brazil_bg2.jpg) no-repeat
