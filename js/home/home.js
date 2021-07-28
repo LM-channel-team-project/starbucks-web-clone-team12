@@ -5,6 +5,9 @@ const beanContent = document.querySelector(".bean__contents");
 const favText1 = document.querySelector(".fav__txt1");
 const favText2 = document.querySelector(".fav__txt2");
 
+const mzRight = document.querySelector(".mz__right");
+const mzBtn = document.querySelector(".mz__btn");
+
 document.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
 
@@ -21,5 +24,12 @@ document.addEventListener("scroll", () => {
   } else {
     favText1.classList.remove("moveFavText1");
     favText2.classList.remove("moveFavText2");
+  }
+  if (1928 < scrollY) {
+    mzRight.className = "moveMzRight";
+    mzBtn.className = "moveMzBtn";
+  } else {
+    mzRight.classList.remove("moveMzRight");
+    mzBtn.classList.remove("moveMzBtn");
   }
 });

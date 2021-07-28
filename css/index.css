@@ -505,7 +505,7 @@
   top: 7.5em;
   width: 16.125em;
   z-index: 7;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-name: favText1;
 }
 
@@ -528,7 +528,7 @@
   top: 23.125em;
   width: 22.625em;
   z-index: 7;
-  animation-duration: 2.5s;
+  animation-duration: 3.5s;
   animation-name: favText2;
 }
 
@@ -577,4 +577,107 @@
   background-color: #fff;
   color: #000;
   text-decoration: underline;
+}
+
+/* reserve Magazine style */
+#reserve__MZ {
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.mz__inner {
+  position: relative;
+  max-width: 77.5em;
+  margin: 0 auto;
+  padding: 5.625em 0;
+}
+
+.mz__inner:before {
+  content: "";
+  position: absolute;
+  top: 61.8%;
+  left: 9.5%;
+  width: 95.3%;
+  height: 1px;
+  background-color: #cccccb;
+}
+.mz__inner:after {
+  content: "";
+  position: absolute;
+  left: 44%;
+  top: 8.5em;
+  width: 1px;
+  height: 64%;
+  background-color: #cccccb;
+}
+.mz__left {
+  position: relative;
+  padding-left: 3.5%;
+  display: inline-block;
+  vertical-align: top;
+}
+.mz__inner > div {
+  display: inline-block;
+  vertical-align: top;
+}
+.moveMzRight {
+  position: absolute;
+  width: 45.6%;
+  margin-left: 6.3%;
+  padding-right: 3.5%;
+  left: 520px;
+  animation-duration: 2.5s;
+  animation-name: mzRight;
+}
+@keyframes mzRight {
+  from {
+    left: 100%;
+    opacity: 0;
+  }
+  to {
+    left: 520px;
+    opacity: 1;
+  }
+}
+.moveMzRight img {
+  margin-top: 35%;
+}
+
+.moveMzBtn {
+  position: absolute;
+  bottom: 31.5%;
+  left: 0%;
+  width: 19.1875em;
+  height: 2.0625em;
+  display: inline-block;
+  margin-left: calc(50% - 1.875em);
+  padding: 0.5em 0.625em;
+  transition: background-color 0.8s;
+  animation-duration: 2.5s;
+  animation-name: mzBtn;
+}
+@keyframes mzBtn {
+  from {
+    left: 100%;
+    opacity: 0;
+  }
+  to {
+    left: 0%;
+    opacity: 1;
+  }
+}
+.moveMzBtn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url(../images/index/reserve_mz/btn_magazine_pc.png);
+}
+.moveMzBtn:hover {
+  background-color: #976d3f;
+}
+.moveMzBtn:hover a {
+  background-position: 0 -1.0625em;
 }
