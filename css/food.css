@@ -8,7 +8,7 @@
   background: #fff;
 }
 .sub .sub-inner {
-  width: 1100px;
+  width: 80%;
   height: 90px;
   margin: 0 auto;
   position: relative;
@@ -35,7 +35,7 @@
 
 /* Content 부분 */
 .content {
-  width: 1100px;
+  width: 80%;
   margin: 0 auto;
   padding-bottom: 90px;
 }
@@ -218,6 +218,14 @@
 .content .themeList {
   display: none;
 }
+
+.categoryList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .categoryList .category_title {
   padding: 20px;
   background: #f4f4f2;
@@ -227,6 +235,7 @@
   font-size: 18px;
   font-weight: bold;
   color: #222;
+  width: 100%;
 }
 .list {
   display: block;
@@ -236,9 +245,13 @@
   grid-template-columns: repeat(4, 1fr);
   row-gap: 10px;
   column-gap: 23px;
+  row-gap: 23px;
+  column-gap: 90px;
+  padding: 15px;
 }
 .item_container {
   text-align: center;
+  width: 250px;
 }
 .item_container .item_content {
   height: 280px;
@@ -256,7 +269,7 @@
 }
 
 .item_description {
-  font-size: 14px;
+  font-size: 18px;
   color: #444;
   height: 54px;
   line-height: 54px;
