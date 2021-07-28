@@ -340,21 +340,73 @@
   background-position: center;
   background-size: cover;
 }
-.bean__innner {
+.bean__inner {
   position: relative;
   max-width: 1080px;
   height: 100%;
   margin: 0 auto;
 }
-.bean__img {
+
+.moveBean__img {
+  position: absolute;
   top: 14.3%;
   left: 14.3%;
   max-width: 206px;
   width: 20%;
+  animation-duration: 2s;
+  animation-name: slideToRight;
 }
-.bean__contents {
+@keyframes slideToRight {
+  from {
+    left: -50%;
+    opacity: 0;
+  }
+  to {
+    left: 14.3%;
+    opacity: 1;
+  }
+}
+
+.moveBean__Content {
+  position: absolute;
   top: 33.1%;
   right: 7.9%;
   max-width: 408px;
   width: 38%;
+  animation-duration: 2s;
+  animation-name: slideToLeft;
+}
+@keyframes slideToLeft {
+  from {
+    right: -40%;
+    opacity: 0;
+  }
+  to {
+    right: 7.9%;
+    opacity: 1;
+  }
+}
+
+.moveBean__Content img {
+  margin-bottom: 39px;
+}
+.etc__btn a {
+  width: 15.6em;
+  border-radius: 0.3125em;
+  border: 0.125em solid #1b4728;
+  color: #1b4728;
+  padding: 0.5em 1.687em;
+  text-align: center;
+  left: 1em;
+  margin-top: 3.7em;
+}
+
+.etc__btn a:hover {
+  background-color: #1b4728;
+  color: white;
+  text-decoration: underline;
+}
+
+#reverse__wrap {
+  height: 400px;
 }
