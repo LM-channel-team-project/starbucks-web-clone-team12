@@ -479,3 +479,102 @@
   color: white;
   text-decoration: underline;
 }
+
+/* fav wrap style */
+
+#fav__wrap {
+  background: url(../images/index/favwrap/fav_prod_bg_new.jpg) center center fixed no-repeat #45434c;
+  background-size: auto 100%;
+  height: 50em;
+  padding: 0;
+  position: relative;
+}
+.fav__inner {
+  left: 50%;
+  margin-left: -40em;
+  position: absolute;
+  top: 0;
+  width: 80em;
+}
+
+.moveFavText1 {
+  background: url(../images/index/favwrap/fav_prod_txt01.png);
+  height: 12.75em;
+  left: 12.5em;
+  position: absolute;
+  top: 7.5em;
+  width: 16.125em;
+  z-index: 7;
+  animation-duration: 2s;
+  animation-name: favText1;
+}
+
+@keyframes favText1 {
+  from {
+    left: -43.75em;
+    opacity: 0;
+  }
+  to {
+    left: 12.5em;
+    opacity: 1;
+  }
+}
+
+.moveFavText2 {
+  background: url(../images/index/favwrap/fav_prod_txt02.png);
+  height: 9.75em;
+  left: 5.75em;
+  position: absolute;
+  top: 23.125em;
+  width: 22.625em;
+  z-index: 7;
+  animation-duration: 2.5s;
+  animation-name: favText2;
+}
+
+@keyframes favText2 {
+  from {
+    left: -43.75em;
+    opacity: 0;
+  }
+  to {
+    left: 5.75em;
+    opacity: 1;
+  }
+}
+
+.fav__img {
+  position: absolute;
+  z-index: 7;
+  top: 6.25em;
+  right: -0.625em;
+  width: 42em;
+  height: 28.625em;
+  background-image: url(../images/index/favwrap/2021_summer3_fav.png);
+}
+.fav__btn {
+  position: absolute;
+  z-index: 10;
+  left: 20.5em;
+  top: 35.625em;
+  width: 7.8125em;
+  height: 2.375em;
+}
+.fav__btn a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 2.125em;
+  text-align: center;
+  border: 0.125em solid #fff;
+  border-radius: 0.3125em;
+  line-height: 2.125em;
+  transition: all 0.5s;
+}
+.fav__btn a:hover {
+  transition: all 0.5s;
+  background-color: #fff;
+  color: #000;
+  text-decoration: underline;
+}
