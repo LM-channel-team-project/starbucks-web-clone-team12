@@ -39,7 +39,7 @@
   height: 64px;
   margin-left: -567px;
   top: 8px;
-  width: 1134px;
+  width: 1182px;
   left: 50%;
   position: absolute;
 }
@@ -67,6 +67,9 @@
   color: #ccc;
   font-size: 12px;
   padding: 0 10px;
+}
+.copyright a:hover {
+  text-decoration: underline;
 }
 .copyright .first {
   color: #00b050 !important;
