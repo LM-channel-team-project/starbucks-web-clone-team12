@@ -4,6 +4,9 @@
   position: relative;
   width: 100%;
 }
+#footer a:hover {
+  text-decoration: underline;
+}
 
 .footer_wrap {
   margin-left: -550px;
@@ -68,9 +71,7 @@
   font-size: 12px;
   padding: 0 10px;
 }
-.copyright a:hover {
-  text-decoration: underline;
-}
+
 .copyright .first {
   color: #00b050 !important;
   font-weight: bold;
