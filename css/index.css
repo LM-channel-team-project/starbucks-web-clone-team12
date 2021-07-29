@@ -695,3 +695,159 @@
 .moveMzBtn:hover a {
   background-position: 0 -1.0625em;
 }
+
+/* store wrap style */
+#store__wrap {
+  height: 25rem;
+  background: url(../images/index/storewrap/store_bg.jpg);
+  background-size: auto 100%;
+  position: relative;
+  overflow: hidden;
+}
+.store__inner {
+  position: absolute;
+  left: 50%;
+  margin-left: -40rem;
+  top: 0;
+  width: 80rem;
+}
+.moveStoreImg1 {
+  background-image: url(../images/index/storewrap/storeImg1.png);
+  height: 14.25rem;
+  left: 24.375rem;
+  position: absolute;
+  top: 9.3125rem;
+  width: 14.25rem;
+  z-index: 5;
+  opacity: 1;
+  animation-duration: 2.5s;
+  animation-name: ImgOpacity;
+}
+.moveStoreImg2 {
+  background-image: url(../images/index/storewrap/storeImg2.png);
+  height: 19.5rem;
+  left: 16rem;
+  position: absolute;
+  top: 0;
+  width: 22.875rem;
+  z-index: 4;
+  opacity: 1;
+  animation-duration: 3.5s;
+  animation-name: ImgOpacity;
+}
+.moveStoreImg3 {
+  background-image: url(../images/index/storewrap/storeImg3.png);
+  height: 8.875rem;
+  left: 32.5rem;
+  position: absolute;
+  top: -3.75rem;
+  width: 21.4375rem;
+  z-index: 4;
+  opacity: 1;
+  animation-duration: 4.5s;
+  animation-name: ImgOpacity;
+}
+.moveStoreImg4 {
+  background-image: url(../images/index/storewrap/storeImg4.png);
+  height: 6.375rem;
+  position: absolute;
+  right: 1.875rem;
+  top: 18.625rem;
+  width: 230px;
+  z-index: 4;
+  opacity: 1;
+  animation-duration: 4.5s;
+  animation-name: ImgOpacity;
+}
+
+@keyframes ImgOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.moveStoreTxt1 {
+  background-image: url(../images/index/storewrap/store_txt01.png);
+  height: 54px;
+  position: absolute;
+  right: 149px;
+  overflow: hidden;
+  top: 100px;
+  width: 385px;
+  z-index: 4;
+  animation-duration: 2s;
+  animation-name: mvtxt1;
+}
+.moveStoreTxt2 {
+  background-image: url(../images/index/storewrap/store_txt02.png);
+  height: 61px;
+  position: absolute;
+  right: 168px;
+  overflow: hidden;
+  top: 168px;
+  width: 366px;
+  z-index: 4;
+  animation-duration: 3s;
+  animation-name: mvtxt2;
+}
+.moveStoreBtn {
+  border: 2px solid #222;
+  border-radius: 3px;
+  height: 38px;
+  line-height: 34px;
+  position: absolute;
+  right: 402px;
+  top: 258px;
+  width: 125px;
+  z-index: 4;
+  animation-duration: 4s;
+  animation-name: mvbtn;
+}
+.moveStoreBtn a {
+  color: #222;
+  display: block;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  transition: background-color 0.7s, color 0.7s;
+}
+.moveStoreBtn a:hover {
+  background-color: #222;
+  color: #fff;
+  text-decoration: underline;
+}
+
+@keyframes mvtxt1 {
+  from {
+    opacity: 0;
+    right: -600px;
+  }
+  to {
+    opacity: 1;
+    right: 149px;
+  }
+}
+
+@keyframes mvtxt2 {
+  from {
+    opacity: 0;
+    right: -600px;
+  }
+  to {
+    opacity: 1;
+    right: 168px;
+  }
+}
+@keyframes mvbtn {
+  from {
+    opacity: 0;
+    right: -600px;
+  }
+  to {
+    opacity: 1;
+    right: 402px;
+  }
+}
