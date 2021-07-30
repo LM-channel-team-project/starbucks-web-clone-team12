@@ -11,6 +11,10 @@
 .title {
   height: 20px;
   line-height: 50px;
+  font-size: 32px;
+  margin-top: 9px;
+  margin-bottom: 16px;
+  font-weight: bold;
 }
 .map {
   text-align: right;
