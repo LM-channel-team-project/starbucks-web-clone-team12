@@ -16,6 +16,7 @@
 .sub-inner #title {
   font-size: 32px;
   font-weight: bold;
+  padding: 20px 0px;
 }
 .sub-inner .maps {
   position: absolute;
