@@ -11,6 +11,7 @@ https://lm-channel-team-project.github.io/starbucks-web-clone-team12/
 
 ### 프로젝트 소개
 HTML, CSS, JS를 사용해서 메인페이지, manu bar, FOOD, DRINK, GIFT, CARD를 클론했습니다.
+
 <img width="702" alt="スクリーンショット 2021-07-31 22 29 48" src="https://user-images.githubusercontent.com/77221488/127741467-4a59c49b-d7f9-4813-9a8b-6a55be43f39b.png">
 
 - 메인페이지: https://github.com/lhk3337
