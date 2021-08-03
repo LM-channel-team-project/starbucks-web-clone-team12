@@ -6,7 +6,6 @@ const checkboxBtnContainer = document.querySelector('.search__checkbox');
 const items = document.querySelectorAll('.items__category');
 
 checkboxBtnContainer.addEventListener('click', (e) => {
-  console.log(e.target.parentNode)
   const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
   if (filter == null) {
     return;

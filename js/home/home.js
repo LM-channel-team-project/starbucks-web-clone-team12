@@ -18,7 +18,6 @@ const storeBtn = document.querySelector(".store__btn");
 
 document.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
-  console.log(scrollY);
   if (scrollY > 154) {
     beanContent.className = "moveBean__Content";
     beanImg.className = "moveBean__img";
