@@ -135,7 +135,9 @@
   overflow: hidden;
 }
 .product_select_wrap ul {
-  width: 1040px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 #mCSB_1_container li {
