@@ -97,7 +97,8 @@ HTML, CSS, JS를 사용해서 메인 페이지, manu bar, FOOD, DRINK, GIFT, CAR
 
 스타벅스 홈페이지에서 사용되는 checkbox와 최대한 비슷하게 구현하기 위해 브라우저에서 제공하는 checkbox를 쓰지 않고 div태그로 박스를 만들어서 css에서 가상 클래스 :focus를 써서 클릭했을 때 체크 마크가 나오게끔 구현했다.
 
-()
+<img width="1055" alt="スクリーンショット 2021-08-09 13 08 47" src="https://user-images.githubusercontent.com/77221488/128659700-67a8d749-b483-4c0a-b04c-d793aaca12ab.png">
+
 
 ### ❓이번 프로젝트를 통해 새로 배운 점
 
@@ -109,14 +110,14 @@ HTML, CSS, JS를 사용해서 메인 페이지, manu bar, FOOD, DRINK, GIFT, CAR
 
 반응형까지 고려해서 구현한 점.
 
-(동영상)
+
 
 </br>
 </br>
 </br>
 
 ---
-
+</br>
 - 이름: 김혜린
 - 깃허브: https://github.com/Kim-Hyerin
 - 맡은 페이지: CARD
