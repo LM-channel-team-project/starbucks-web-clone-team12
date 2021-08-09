@@ -115,6 +115,8 @@ HTML, CSS, JS를 사용해서 메인 페이지, manu bar, FOOD, DRINK, GIFT, CAR
 </br>
 </br>
 
+---
+
 - 이름: 김혜린
 - 깃허브: https://github.com/Kim-Hyerin
 - 맡은 페이지: CARD
